@@ -1,0 +1,904 @@
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 27, 1
+   3              		.eabi_attribute 28, 1
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"lcd.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.LCD_WriteDBUS,"ax",%progbits
+  18              		.align	1
+  19              		.global	LCD_WriteDBUS
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv4-sp-d16
+  26              	LCD_WriteDBUS:
+  27              	.LVL0:
+  28              	.LFB127:
+  29              		.file 1 "Src/lcd.c"
+   1:Src/lcd.c     **** #include "lcd.h"
+   2:Src/lcd.c     **** #include <string.h>
+   3:Src/lcd.c     **** 
+   4:Src/lcd.c     **** void LCD_Init(void)
+   5:Src/lcd.c     **** {
+   6:Src/lcd.c     ****     LCD_WriteCmd(0x38);
+   7:Src/lcd.c     ****     HAL_Delay(5);
+   8:Src/lcd.c     ****     LCD_WriteCmd(0x0c);
+   9:Src/lcd.c     ****     HAL_Delay(5);
+  10:Src/lcd.c     ****     LCD_WriteCmd(0x06);
+  11:Src/lcd.c     ****     HAL_Delay(5);
+  12:Src/lcd.c     ****     LCD_WriteCmd(0x01);
+  13:Src/lcd.c     ****     HAL_Delay(5);
+  14:Src/lcd.c     **** }
+  15:Src/lcd.c     **** 
+  16:Src/lcd.c     **** void LCD_WriteDBUS(uint8_t *d)
+  17:Src/lcd.c     **** {
+  30              		.loc 1 17 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		.loc 1 17 1 is_stmt 0 view .LVU1
+  35 0000 38B5     		push	{r3, r4, r5, lr}
+  36              	.LCFI0:
+  37              		.cfi_def_cfa_offset 16
+  38              		.cfi_offset 3, -16
+  39              		.cfi_offset 4, -12
+  40              		.cfi_offset 5, -8
+  41              		.cfi_offset 14, -4
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 2
+
+
+  42 0002 0446     		mov	r4, r0
+  18:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB7_GPIO_Port, LCD_DB7_Pin, d[7]); // DB7
+  43              		.loc 1 18 5 is_stmt 1 view .LVU2
+  44 0004 144D     		ldr	r5, .L3
+  45 0006 C279     		ldrb	r2, [r0, #7]	@ zero_extendqisi2
+  46 0008 0121     		movs	r1, #1
+  47 000a 2846     		mov	r0, r5
+  48              	.LVL1:
+  49              		.loc 1 18 5 is_stmt 0 view .LVU3
+  50 000c FFF7FEFF 		bl	HAL_GPIO_WritePin
+  51              	.LVL2:
+  19:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB6_GPIO_Port, LCD_DB6_Pin, d[6]);
+  52              		.loc 1 19 5 is_stmt 1 view .LVU4
+  53 0010 A279     		ldrb	r2, [r4, #6]	@ zero_extendqisi2
+  54 0012 0221     		movs	r1, #2
+  55 0014 2846     		mov	r0, r5
+  56 0016 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  57              	.LVL3:
+  20:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB5_GPIO_Port, LCD_DB5_Pin, d[5]);
+  58              		.loc 1 20 5 view .LVU5
+  59 001a 6279     		ldrb	r2, [r4, #5]	@ zero_extendqisi2
+  60 001c 0421     		movs	r1, #4
+  61 001e 2846     		mov	r0, r5
+  62 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  63              	.LVL4:
+  21:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB4_GPIO_Port, LCD_DB4_Pin, d[4]);
+  64              		.loc 1 21 5 view .LVU6
+  65 0024 2279     		ldrb	r2, [r4, #4]	@ zero_extendqisi2
+  66 0026 0821     		movs	r1, #8
+  67 0028 2846     		mov	r0, r5
+  68 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
+  69              	.LVL5:
+  22:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB3_GPIO_Port, LCD_DB3_Pin, d[3]);
+  70              		.loc 1 22 5 view .LVU7
+  71 002e E278     		ldrb	r2, [r4, #3]	@ zero_extendqisi2
+  72 0030 1021     		movs	r1, #16
+  73 0032 2846     		mov	r0, r5
+  74 0034 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  75              	.LVL6:
+  23:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB2_GPIO_Port, LCD_DB2_Pin, d[2]);
+  76              		.loc 1 23 5 view .LVU8
+  77 0038 A278     		ldrb	r2, [r4, #2]	@ zero_extendqisi2
+  78 003a 2021     		movs	r1, #32
+  79 003c 2846     		mov	r0, r5
+  80 003e FFF7FEFF 		bl	HAL_GPIO_WritePin
+  81              	.LVL7:
+  24:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB1_GPIO_Port, LCD_DB1_Pin, d[1]);
+  82              		.loc 1 24 5 view .LVU9
+  83 0042 6278     		ldrb	r2, [r4, #1]	@ zero_extendqisi2
+  84 0044 4021     		movs	r1, #64
+  85 0046 2846     		mov	r0, r5
+  86 0048 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  87              	.LVL8:
+  25:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB0_GPIO_Port, LCD_DB0_Pin, d[0]);
+  88              		.loc 1 25 5 view .LVU10
+  89 004c 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
+  90 004e 8021     		movs	r1, #128
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 3
+
+
+  91 0050 2846     		mov	r0, r5
+  92 0052 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  93              	.LVL9:
+  26:Src/lcd.c     **** }
+  94              		.loc 1 26 1 is_stmt 0 view .LVU11
+  95 0056 38BD     		pop	{r3, r4, r5, pc}
+  96              	.LVL10:
+  97              	.L4:
+  98              		.loc 1 26 1 view .LVU12
+  99              		.align	2
+ 100              	.L3:
+ 101 0058 000C0048 		.word	1207962624
+ 102              		.cfi_endproc
+ 103              	.LFE127:
+ 105              		.section	.text.LCD_WriteDB,"ax",%progbits
+ 106              		.align	1
+ 107              		.global	LCD_WriteDB
+ 108              		.syntax unified
+ 109              		.thumb
+ 110              		.thumb_func
+ 111              		.fpu fpv4-sp-d16
+ 113              	LCD_WriteDB:
+ 114              	.LVL11:
+ 115              	.LFB128:
+  27:Src/lcd.c     **** 
+  28:Src/lcd.c     **** /*
+  29:Src/lcd.c     ****     Write DATA to LCD DB
+  30:Src/lcd.c     **** */
+  31:Src/lcd.c     **** void LCD_WriteDB(uint8_t data)
+  32:Src/lcd.c     **** {
+ 116              		.loc 1 32 1 is_stmt 1 view -0
+ 117              		.cfi_startproc
+ 118              		@ args = 0, pretend = 0, frame = 0
+ 119              		@ frame_needed = 0, uses_anonymous_args = 0
+ 120              		.loc 1 32 1 is_stmt 0 view .LVU14
+ 121 0000 38B5     		push	{r3, r4, r5, lr}
+ 122              	.LCFI1:
+ 123              		.cfi_def_cfa_offset 16
+ 124              		.cfi_offset 3, -16
+ 125              		.cfi_offset 4, -12
+ 126              		.cfi_offset 5, -8
+ 127              		.cfi_offset 14, -4
+ 128 0002 0446     		mov	r4, r0
+  33:Src/lcd.c     ****     uint8_t d = 0;
+ 129              		.loc 1 33 5 is_stmt 1 view .LVU15
+ 130              	.LVL12:
+  34:Src/lcd.c     ****     uint8_t db[8] = {0};
+ 131              		.loc 1 34 5 view .LVU16
+  35:Src/lcd.c     **** #if 0
+  36:Src/lcd.c     ****     db[7] = (data & 0x80) >> 7;
+  37:Src/lcd.c     ****     db[6] = (data & 0x40) >> 6;
+  38:Src/lcd.c     ****     db[5] = (data & 0x20) >> 5;
+  39:Src/lcd.c     ****     db[4] = (data & 0x10) >> 4;
+  40:Src/lcd.c     ****     db[3] = (data & 0x08) >> 3;
+  41:Src/lcd.c     ****     db[2] = (data & 0x04) >> 2;
+  42:Src/lcd.c     ****     db[1] = (data & 0x02) >> 1;
+  43:Src/lcd.c     ****     db[0] = (data & 0x01);
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 4
+
+
+  44:Src/lcd.c     **** 
+  45:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB7_GPIO_Port, LCD_DB7_Pin, (GPIO_PinState)db[7]); //DB7
+  46:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB6_GPIO_Port, LCD_DB6_Pin, (GPIO_PinState)db[6]);
+  47:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB5_GPIO_Port, LCD_DB5_Pin, (GPIO_PinState)db[5]);
+  48:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB4_GPIO_Port, LCD_DB4_Pin, (GPIO_PinState)db[4]);
+  49:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB3_GPIO_Port, LCD_DB3_Pin, (GPIO_PinState)db[3]);
+  50:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB2_GPIO_Port, LCD_DB2_Pin, (GPIO_PinState)db[2]);
+  51:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB1_GPIO_Port, LCD_DB1_Pin, (GPIO_PinState)db[1]);
+  52:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB0_GPIO_Port, LCD_DB0_Pin, (GPIO_PinState)db[0]); //DB0
+  53:Src/lcd.c     **** #else
+  54:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB7_GPIO_Port, LCD_DB7_Pin, (GPIO_PinState)((data & 0x80) >> 7)); // DB7
+ 132              		.loc 1 54 5 view .LVU17
+ 133 0004 184D     		ldr	r5, .L7
+ 134 0006 C209     		lsrs	r2, r0, #7
+ 135 0008 0121     		movs	r1, #1
+ 136 000a 2846     		mov	r0, r5
+ 137              	.LVL13:
+ 138              		.loc 1 54 5 is_stmt 0 view .LVU18
+ 139 000c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 140              	.LVL14:
+  55:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB6_GPIO_Port, LCD_DB6_Pin, (GPIO_PinState)((data & 0x40) >> 6));
+ 141              		.loc 1 55 5 is_stmt 1 view .LVU19
+ 142 0010 C4F38012 		ubfx	r2, r4, #6, #1
+ 143 0014 0221     		movs	r1, #2
+ 144 0016 2846     		mov	r0, r5
+ 145 0018 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 146              	.LVL15:
+  56:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB5_GPIO_Port, LCD_DB5_Pin, (GPIO_PinState)((data & 0x20) >> 5));
+ 147              		.loc 1 56 5 view .LVU20
+ 148 001c C4F34012 		ubfx	r2, r4, #5, #1
+ 149 0020 0421     		movs	r1, #4
+ 150 0022 2846     		mov	r0, r5
+ 151 0024 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 152              	.LVL16:
+  57:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB4_GPIO_Port, LCD_DB4_Pin, (GPIO_PinState)((data & 0x10) >> 4));
+ 153              		.loc 1 57 5 view .LVU21
+ 154 0028 C4F30012 		ubfx	r2, r4, #4, #1
+ 155 002c 0821     		movs	r1, #8
+ 156 002e 2846     		mov	r0, r5
+ 157 0030 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 158              	.LVL17:
+  58:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB3_GPIO_Port, LCD_DB3_Pin, (GPIO_PinState)((data & 0x08) >> 3));
+ 159              		.loc 1 58 5 view .LVU22
+ 160 0034 C4F3C002 		ubfx	r2, r4, #3, #1
+ 161 0038 1021     		movs	r1, #16
+ 162 003a 2846     		mov	r0, r5
+ 163 003c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 164              	.LVL18:
+  59:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB2_GPIO_Port, LCD_DB2_Pin, (GPIO_PinState)((data & 0x04) >> 2));
+ 165              		.loc 1 59 5 view .LVU23
+ 166 0040 C4F38002 		ubfx	r2, r4, #2, #1
+ 167 0044 2021     		movs	r1, #32
+ 168 0046 2846     		mov	r0, r5
+ 169 0048 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 170              	.LVL19:
+  60:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB1_GPIO_Port, LCD_DB1_Pin, (GPIO_PinState)((data & 0x02) >> 1));
+ 171              		.loc 1 60 5 view .LVU24
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 5
+
+
+ 172 004c C4F34002 		ubfx	r2, r4, #1, #1
+ 173 0050 4021     		movs	r1, #64
+ 174 0052 2846     		mov	r0, r5
+ 175 0054 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 176              	.LVL20:
+  61:Src/lcd.c     ****     HAL_GPIO_WritePin(LCD_DB0_GPIO_Port, LCD_DB0_Pin, (GPIO_PinState)(data & 0x01)); // DB0
+ 177              		.loc 1 61 5 view .LVU25
+ 178 0058 04F00102 		and	r2, r4, #1
+ 179 005c 8021     		movs	r1, #128
+ 180 005e 2846     		mov	r0, r5
+ 181 0060 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 182              	.LVL21:
+  62:Src/lcd.c     **** #endif
+  63:Src/lcd.c     **** }
+ 183              		.loc 1 63 1 is_stmt 0 view .LVU26
+ 184 0064 38BD     		pop	{r3, r4, r5, pc}
+ 185              	.L8:
+ 186 0066 00BF     		.align	2
+ 187              	.L7:
+ 188 0068 000C0048 		.word	1207962624
+ 189              		.cfi_endproc
+ 190              	.LFE128:
+ 192              		.section	.text.LCD_WriteCmd,"ax",%progbits
+ 193              		.align	1
+ 194              		.global	LCD_WriteCmd
+ 195              		.syntax unified
+ 196              		.thumb
+ 197              		.thumb_func
+ 198              		.fpu fpv4-sp-d16
+ 200              	LCD_WriteCmd:
+ 201              	.LVL22:
+ 202              	.LFB129:
+  64:Src/lcd.c     **** 
+  65:Src/lcd.c     **** void LCD_WriteCmd(uint8_t cmd)
+  66:Src/lcd.c     **** {
+ 203              		.loc 1 66 1 is_stmt 1 view -0
+ 204              		.cfi_startproc
+ 205              		@ args = 0, pretend = 0, frame = 0
+ 206              		@ frame_needed = 0, uses_anonymous_args = 0
+ 207              		.loc 1 66 1 is_stmt 0 view .LVU28
+ 208 0000 10B5     		push	{r4, lr}
+ 209              	.LCFI2:
+ 210              		.cfi_def_cfa_offset 8
+ 211              		.cfi_offset 4, -8
+ 212              		.cfi_offset 14, -4
+ 213 0002 0446     		mov	r4, r0
+  67:Src/lcd.c     ****     LCD_RS_Clr();
+ 214              		.loc 1 67 5 is_stmt 1 view .LVU29
+ 215 0004 0022     		movs	r2, #0
+ 216 0006 4FF48071 		mov	r1, #256
+ 217 000a 4FF09040 		mov	r0, #1207959552
+ 218              	.LVL23:
+ 219              		.loc 1 67 5 is_stmt 0 view .LVU30
+ 220 000e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 221              	.LVL24:
+ 222              		.loc 1 67 17 is_stmt 1 view .LVU31
+  68:Src/lcd.c     ****     LCD_RW_Clr();
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 6
+
+
+ 223              		.loc 1 68 5 view .LVU32
+ 224 0012 0022     		movs	r2, #0
+ 225 0014 4FF40071 		mov	r1, #512
+ 226 0018 4FF09040 		mov	r0, #1207959552
+ 227 001c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 228              	.LVL25:
+ 229              		.loc 1 68 17 view .LVU33
+  69:Src/lcd.c     ****     LCD_EN_Clr();
+ 230              		.loc 1 69 5 view .LVU34
+ 231 0020 0022     		movs	r2, #0
+ 232 0022 4FF48061 		mov	r1, #1024
+ 233 0026 4FF09040 		mov	r0, #1207959552
+ 234 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 235              	.LVL26:
+ 236              		.loc 1 69 17 view .LVU35
+  70:Src/lcd.c     ****     LCD_WriteDB(cmd);
+ 237              		.loc 1 70 5 view .LVU36
+ 238 002e 2046     		mov	r0, r4
+ 239 0030 FFF7FEFF 		bl	LCD_WriteDB
+ 240              	.LVL27:
+  71:Src/lcd.c     ****     LCD_EN_Set();
+ 241              		.loc 1 71 5 view .LVU37
+ 242 0034 0122     		movs	r2, #1
+ 243 0036 4FF48061 		mov	r1, #1024
+ 244 003a 4FF09040 		mov	r0, #1207959552
+ 245 003e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 246              	.LVL28:
+ 247              		.loc 1 71 17 view .LVU38
+  72:Src/lcd.c     ****     HAL_Delay(5);
+ 248              		.loc 1 72 5 view .LVU39
+ 249 0042 0520     		movs	r0, #5
+ 250 0044 FFF7FEFF 		bl	HAL_Delay
+ 251              	.LVL29:
+  73:Src/lcd.c     ****     LCD_EN_Clr();
+ 252              		.loc 1 73 5 view .LVU40
+ 253 0048 0022     		movs	r2, #0
+ 254 004a 4FF48061 		mov	r1, #1024
+ 255 004e 4FF09040 		mov	r0, #1207959552
+ 256 0052 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 257              	.LVL30:
+ 258              		.loc 1 73 17 view .LVU41
+  74:Src/lcd.c     **** }
+ 259              		.loc 1 74 1 is_stmt 0 view .LVU42
+ 260 0056 10BD     		pop	{r4, pc}
+ 261              		.cfi_endproc
+ 262              	.LFE129:
+ 264              		.section	.text.LCD_Init,"ax",%progbits
+ 265              		.align	1
+ 266              		.global	LCD_Init
+ 267              		.syntax unified
+ 268              		.thumb
+ 269              		.thumb_func
+ 270              		.fpu fpv4-sp-d16
+ 272              	LCD_Init:
+ 273              	.LFB126:
+   5:Src/lcd.c     ****     HAL_Delay(5);
+ 274              		.loc 1 5 1 is_stmt 1 view -0
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 7
+
+
+ 275              		.cfi_startproc
+ 276              		@ args = 0, pretend = 0, frame = 0
+ 277              		@ frame_needed = 0, uses_anonymous_args = 0
+ 278 0000 08B5     		push	{r3, lr}
+ 279              	.LCFI3:
+ 280              		.cfi_def_cfa_offset 8
+ 281              		.cfi_offset 3, -8
+ 282              		.cfi_offset 14, -4
+   6:Src/lcd.c     ****     HAL_Delay(5);
+ 283              		.loc 1 6 5 view .LVU44
+ 284 0002 3820     		movs	r0, #56
+ 285 0004 FFF7FEFF 		bl	LCD_WriteCmd
+ 286              	.LVL31:
+   7:Src/lcd.c     ****     LCD_WriteCmd(0x0c);
+ 287              		.loc 1 7 5 view .LVU45
+ 288 0008 0520     		movs	r0, #5
+ 289 000a FFF7FEFF 		bl	HAL_Delay
+ 290              	.LVL32:
+   8:Src/lcd.c     ****     HAL_Delay(5);
+ 291              		.loc 1 8 5 view .LVU46
+ 292 000e 0C20     		movs	r0, #12
+ 293 0010 FFF7FEFF 		bl	LCD_WriteCmd
+ 294              	.LVL33:
+   9:Src/lcd.c     ****     LCD_WriteCmd(0x06);
+ 295              		.loc 1 9 5 view .LVU47
+ 296 0014 0520     		movs	r0, #5
+ 297 0016 FFF7FEFF 		bl	HAL_Delay
+ 298              	.LVL34:
+  10:Src/lcd.c     ****     HAL_Delay(5);
+ 299              		.loc 1 10 5 view .LVU48
+ 300 001a 0620     		movs	r0, #6
+ 301 001c FFF7FEFF 		bl	LCD_WriteCmd
+ 302              	.LVL35:
+  11:Src/lcd.c     ****     LCD_WriteCmd(0x01);
+ 303              		.loc 1 11 5 view .LVU49
+ 304 0020 0520     		movs	r0, #5
+ 305 0022 FFF7FEFF 		bl	HAL_Delay
+ 306              	.LVL36:
+  12:Src/lcd.c     ****     HAL_Delay(5);
+ 307              		.loc 1 12 5 view .LVU50
+ 308 0026 0120     		movs	r0, #1
+ 309 0028 FFF7FEFF 		bl	LCD_WriteCmd
+ 310              	.LVL37:
+  13:Src/lcd.c     **** }
+ 311              		.loc 1 13 5 view .LVU51
+ 312 002c 0520     		movs	r0, #5
+ 313 002e FFF7FEFF 		bl	HAL_Delay
+ 314              	.LVL38:
+  14:Src/lcd.c     **** 
+ 315              		.loc 1 14 1 is_stmt 0 view .LVU52
+ 316 0032 08BD     		pop	{r3, pc}
+ 317              		.cfi_endproc
+ 318              	.LFE126:
+ 320              		.section	.text.LCD_WriteData,"ax",%progbits
+ 321              		.align	1
+ 322              		.global	LCD_WriteData
+ 323              		.syntax unified
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 8
+
+
+ 324              		.thumb
+ 325              		.thumb_func
+ 326              		.fpu fpv4-sp-d16
+ 328              	LCD_WriteData:
+ 329              	.LVL39:
+ 330              	.LFB130:
+  75:Src/lcd.c     **** 
+  76:Src/lcd.c     **** void LCD_WriteData(uint8_t data)
+  77:Src/lcd.c     **** {
+ 331              		.loc 1 77 1 is_stmt 1 view -0
+ 332              		.cfi_startproc
+ 333              		@ args = 0, pretend = 0, frame = 0
+ 334              		@ frame_needed = 0, uses_anonymous_args = 0
+ 335              		.loc 1 77 1 is_stmt 0 view .LVU54
+ 336 0000 10B5     		push	{r4, lr}
+ 337              	.LCFI4:
+ 338              		.cfi_def_cfa_offset 8
+ 339              		.cfi_offset 4, -8
+ 340              		.cfi_offset 14, -4
+ 341 0002 0446     		mov	r4, r0
+  78:Src/lcd.c     ****     LCD_RS_Set();
+ 342              		.loc 1 78 5 is_stmt 1 view .LVU55
+ 343 0004 0122     		movs	r2, #1
+ 344 0006 4FF48071 		mov	r1, #256
+ 345 000a 4FF09040 		mov	r0, #1207959552
+ 346              	.LVL40:
+ 347              		.loc 1 78 5 is_stmt 0 view .LVU56
+ 348 000e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 349              	.LVL41:
+ 350              		.loc 1 78 17 is_stmt 1 view .LVU57
+  79:Src/lcd.c     ****     LCD_RW_Clr();
+ 351              		.loc 1 79 5 view .LVU58
+ 352 0012 0022     		movs	r2, #0
+ 353 0014 4FF40071 		mov	r1, #512
+ 354 0018 4FF09040 		mov	r0, #1207959552
+ 355 001c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 356              	.LVL42:
+ 357              		.loc 1 79 17 view .LVU59
+  80:Src/lcd.c     ****     LCD_EN_Clr();
+ 358              		.loc 1 80 5 view .LVU60
+ 359 0020 0022     		movs	r2, #0
+ 360 0022 4FF48061 		mov	r1, #1024
+ 361 0026 4FF09040 		mov	r0, #1207959552
+ 362 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 363              	.LVL43:
+ 364              		.loc 1 80 17 view .LVU61
+  81:Src/lcd.c     ****     LCD_WriteDB(data);
+ 365              		.loc 1 81 5 view .LVU62
+ 366 002e 2046     		mov	r0, r4
+ 367 0030 FFF7FEFF 		bl	LCD_WriteDB
+ 368              	.LVL44:
+  82:Src/lcd.c     ****     LCD_EN_Set();
+ 369              		.loc 1 82 5 view .LVU63
+ 370 0034 0122     		movs	r2, #1
+ 371 0036 4FF48061 		mov	r1, #1024
+ 372 003a 4FF09040 		mov	r0, #1207959552
+ 373 003e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 9
+
+
+ 374              	.LVL45:
+ 375              		.loc 1 82 17 view .LVU64
+  83:Src/lcd.c     ****     HAL_Delay(5);
+ 376              		.loc 1 83 5 view .LVU65
+ 377 0042 0520     		movs	r0, #5
+ 378 0044 FFF7FEFF 		bl	HAL_Delay
+ 379              	.LVL46:
+  84:Src/lcd.c     ****     LCD_EN_Clr();
+ 380              		.loc 1 84 5 view .LVU66
+ 381 0048 0022     		movs	r2, #0
+ 382 004a 4FF48061 		mov	r1, #1024
+ 383 004e 4FF09040 		mov	r0, #1207959552
+ 384 0052 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 385              	.LVL47:
+ 386              		.loc 1 84 17 view .LVU67
+  85:Src/lcd.c     **** }
+ 387              		.loc 1 85 1 is_stmt 0 view .LVU68
+ 388 0056 10BD     		pop	{r4, pc}
+ 389              		.cfi_endproc
+ 390              	.LFE130:
+ 392              		.section	.text.LCD_ClearScreen,"ax",%progbits
+ 393              		.align	1
+ 394              		.global	LCD_ClearScreen
+ 395              		.syntax unified
+ 396              		.thumb
+ 397              		.thumb_func
+ 398              		.fpu fpv4-sp-d16
+ 400              	LCD_ClearScreen:
+ 401              	.LFB131:
+  86:Src/lcd.c     **** 
+  87:Src/lcd.c     **** void LCD_ClearScreen(void)
+  88:Src/lcd.c     **** {
+ 402              		.loc 1 88 1 is_stmt 1 view -0
+ 403              		.cfi_startproc
+ 404              		@ args = 0, pretend = 0, frame = 0
+ 405              		@ frame_needed = 0, uses_anonymous_args = 0
+ 406 0000 08B5     		push	{r3, lr}
+ 407              	.LCFI5:
+ 408              		.cfi_def_cfa_offset 8
+ 409              		.cfi_offset 3, -8
+ 410              		.cfi_offset 14, -4
+  89:Src/lcd.c     ****     LCD_WriteCmd(0x01);
+ 411              		.loc 1 89 5 view .LVU70
+ 412 0002 0120     		movs	r0, #1
+ 413 0004 FFF7FEFF 		bl	LCD_WriteCmd
+ 414              	.LVL48:
+  90:Src/lcd.c     **** }
+ 415              		.loc 1 90 1 is_stmt 0 view .LVU71
+ 416 0008 08BD     		pop	{r3, pc}
+ 417              		.cfi_endproc
+ 418              	.LFE131:
+ 420              		.section	.text.LCD_SetCursor,"ax",%progbits
+ 421              		.align	1
+ 422              		.global	LCD_SetCursor
+ 423              		.syntax unified
+ 424              		.thumb
+ 425              		.thumb_func
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 10
+
+
+ 426              		.fpu fpv4-sp-d16
+ 428              	LCD_SetCursor:
+ 429              	.LVL49:
+ 430              	.LFB132:
+  91:Src/lcd.c     **** 
+  92:Src/lcd.c     **** void LCD_SetCursor(uint8_t x, uint8_t y)
+  93:Src/lcd.c     **** {
+ 431              		.loc 1 93 1 is_stmt 1 view -0
+ 432              		.cfi_startproc
+ 433              		@ args = 0, pretend = 0, frame = 0
+ 434              		@ frame_needed = 0, uses_anonymous_args = 0
+ 435              		.loc 1 93 1 is_stmt 0 view .LVU73
+ 436 0000 08B5     		push	{r3, lr}
+ 437              	.LCFI6:
+ 438              		.cfi_def_cfa_offset 8
+ 439              		.cfi_offset 3, -8
+ 440              		.cfi_offset 14, -4
+  94:Src/lcd.c     ****     uint8_t addr;
+ 441              		.loc 1 94 5 is_stmt 1 view .LVU74
+  95:Src/lcd.c     **** 
+  96:Src/lcd.c     ****     if (y == 0)
+ 442              		.loc 1 96 5 view .LVU75
+ 443              		.loc 1 96 8 is_stmt 0 view .LVU76
+ 444 0002 09B1     		cbz	r1, .L18
+  97:Src/lcd.c     ****         addr = 0x00 + x;
+  98:Src/lcd.c     ****     else
+  99:Src/lcd.c     ****         addr = 0x40 + x;
+ 445              		.loc 1 99 9 is_stmt 1 view .LVU77
+ 446              		.loc 1 99 14 is_stmt 0 view .LVU78
+ 447 0004 4030     		adds	r0, r0, #64
+ 448              	.LVL50:
+ 449              		.loc 1 99 14 view .LVU79
+ 450 0006 C0B2     		uxtb	r0, r0
+ 451              	.LVL51:
+ 452              	.L18:
+ 100:Src/lcd.c     ****     LCD_WriteCmd(addr | 0x80);
+ 453              		.loc 1 100 5 is_stmt 1 view .LVU80
+ 454 0008 40F08000 		orr	r0, r0, #128
+ 455              	.LVL52:
+ 456              		.loc 1 100 5 is_stmt 0 view .LVU81
+ 457 000c FFF7FEFF 		bl	LCD_WriteCmd
+ 458              	.LVL53:
+ 101:Src/lcd.c     **** }
+ 459              		.loc 1 101 1 view .LVU82
+ 460 0010 08BD     		pop	{r3, pc}
+ 461              		.cfi_endproc
+ 462              	.LFE132:
+ 464              		.section	.text.LCD_DispStr,"ax",%progbits
+ 465              		.align	1
+ 466              		.global	LCD_DispStr
+ 467              		.syntax unified
+ 468              		.thumb
+ 469              		.thumb_func
+ 470              		.fpu fpv4-sp-d16
+ 472              	LCD_DispStr:
+ 473              	.LVL54:
+ 474              	.LFB133:
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 11
+
+
+ 102:Src/lcd.c     **** 
+ 103:Src/lcd.c     **** void LCD_DispStr(uint8_t x, uint8_t y, uint8_t *str)
+ 104:Src/lcd.c     **** {
+ 475              		.loc 1 104 1 is_stmt 1 view -0
+ 476              		.cfi_startproc
+ 477              		@ args = 0, pretend = 0, frame = 0
+ 478              		@ frame_needed = 0, uses_anonymous_args = 0
+ 479              		.loc 1 104 1 is_stmt 0 view .LVU84
+ 480 0000 10B5     		push	{r4, lr}
+ 481              	.LCFI7:
+ 482              		.cfi_def_cfa_offset 8
+ 483              		.cfi_offset 4, -8
+ 484              		.cfi_offset 14, -4
+ 485 0002 1446     		mov	r4, r2
+ 105:Src/lcd.c     ****     LCD_SetCursor(x, y);
+ 486              		.loc 1 105 5 is_stmt 1 view .LVU85
+ 487 0004 FFF7FEFF 		bl	LCD_SetCursor
+ 488              	.LVL55:
+ 106:Src/lcd.c     **** 
+ 107:Src/lcd.c     ****     while (*str != '\0')
+ 489              		.loc 1 107 5 view .LVU86
+ 490              	.L21:
+ 491              		.loc 1 107 11 view .LVU87
+ 492              		.loc 1 107 12 is_stmt 0 view .LVU88
+ 493 0008 2078     		ldrb	r0, [r4]	@ zero_extendqisi2
+ 494              		.loc 1 107 11 view .LVU89
+ 495 000a 18B1     		cbz	r0, .L24
+ 108:Src/lcd.c     ****     {
+ 109:Src/lcd.c     ****         LCD_WriteData(*str++);
+ 496              		.loc 1 109 9 is_stmt 1 view .LVU90
+ 497              		.loc 1 109 27 is_stmt 0 view .LVU91
+ 498 000c 0134     		adds	r4, r4, #1
+ 499              	.LVL56:
+ 500              		.loc 1 109 9 view .LVU92
+ 501 000e FFF7FEFF 		bl	LCD_WriteData
+ 502              	.LVL57:
+ 503 0012 F9E7     		b	.L21
+ 504              	.L24:
+ 110:Src/lcd.c     ****     }
+ 111:Src/lcd.c     **** }
+ 505              		.loc 1 111 1 view .LVU93
+ 506 0014 10BD     		pop	{r4, pc}
+ 507              		.loc 1 111 1 view .LVU94
+ 508              		.cfi_endproc
+ 509              	.LFE133:
+ 511              		.section	.text.LCD_DispMsg,"ax",%progbits
+ 512              		.align	1
+ 513              		.global	LCD_DispMsg
+ 514              		.syntax unified
+ 515              		.thumb
+ 516              		.thumb_func
+ 517              		.fpu fpv4-sp-d16
+ 519              	LCD_DispMsg:
+ 520              	.LVL58:
+ 521              	.LFB134:
+ 112:Src/lcd.c     **** 
+ 113:Src/lcd.c     **** uint8_t MsgBuf[16] = {0x00};
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 12
+
+
+ 114:Src/lcd.c     **** void LCD_DispMsg(uint8_t *str)
+ 115:Src/lcd.c     **** {
+ 522              		.loc 1 115 1 is_stmt 1 view -0
+ 523              		.cfi_startproc
+ 524              		@ args = 0, pretend = 0, frame = 0
+ 525              		@ frame_needed = 0, uses_anonymous_args = 0
+ 526              		.loc 1 115 1 is_stmt 0 view .LVU96
+ 527 0000 10B5     		push	{r4, lr}
+ 528              	.LCFI8:
+ 529              		.cfi_def_cfa_offset 8
+ 530              		.cfi_offset 4, -8
+ 531              		.cfi_offset 14, -4
+ 532 0002 0446     		mov	r4, r0
+ 116:Src/lcd.c     ****     if (strlen(MsgBuf) != 0)
+ 533              		.loc 1 116 5 is_stmt 1 view .LVU97
+ 534              		.loc 1 116 24 is_stmt 0 view .LVU98
+ 535 0004 0B4B     		ldr	r3, .L29
+ 536 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 537              		.loc 1 116 8 view .LVU99
+ 538 0008 6BB9     		cbnz	r3, .L28
+ 539              	.LVL59:
+ 540              	.L26:
+ 117:Src/lcd.c     ****         LCD_DispStr(0, 0, MsgBuf);
+ 118:Src/lcd.c     **** 
+ 119:Src/lcd.c     ****     LCD_DispStr(0, 1, str);
+ 541              		.loc 1 119 5 is_stmt 1 view .LVU100
+ 542 000a 2246     		mov	r2, r4
+ 543 000c 0121     		movs	r1, #1
+ 544 000e 0020     		movs	r0, #0
+ 545 0010 FFF7FEFF 		bl	LCD_DispStr
+ 546              	.LVL60:
+ 120:Src/lcd.c     ****     memcpy(MsgBuf, str, strlen(str));
+ 547              		.loc 1 120 5 view .LVU101
+ 548 0014 2046     		mov	r0, r4
+ 549 0016 FFF7FEFF 		bl	strlen
+ 550              	.LVL61:
+ 551 001a 0246     		mov	r2, r0
+ 552 001c 2146     		mov	r1, r4
+ 553 001e 0548     		ldr	r0, .L29
+ 554 0020 FFF7FEFF 		bl	memcpy
+ 555              	.LVL62:
+ 121:Src/lcd.c     **** }
+ 556              		.loc 1 121 1 is_stmt 0 view .LVU102
+ 557 0024 10BD     		pop	{r4, pc}
+ 558              	.LVL63:
+ 559              	.L28:
+ 117:Src/lcd.c     ****         LCD_DispStr(0, 0, MsgBuf);
+ 560              		.loc 1 117 9 is_stmt 1 view .LVU103
+ 561 0026 034A     		ldr	r2, .L29
+ 562 0028 0021     		movs	r1, #0
+ 563 002a 0846     		mov	r0, r1
+ 564              	.LVL64:
+ 117:Src/lcd.c     ****         LCD_DispStr(0, 0, MsgBuf);
+ 565              		.loc 1 117 9 is_stmt 0 view .LVU104
+ 566 002c FFF7FEFF 		bl	LCD_DispStr
+ 567              	.LVL65:
+ 568 0030 EBE7     		b	.L26
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 13
+
+
+ 569              	.L30:
+ 570 0032 00BF     		.align	2
+ 571              	.L29:
+ 572 0034 00000000 		.word	.LANCHOR0
+ 573              		.cfi_endproc
+ 574              	.LFE134:
+ 576              		.section	.rodata.LCD_DispVersion.str1.4,"aMS",%progbits,1
+ 577              		.align	2
+ 578              	.LC0:
+ 579 0000 4D534950 		.ascii	"MSIP:V%d.%d\000"
+ 579      3A562564 
+ 579      2E256400 
+ 580              		.align	2
+ 581              	.LC1:
+ 582 000c 4D617920 		.ascii	"May 21 2022\000"
+ 582      32312032 
+ 582      30323200 
+ 583              		.section	.text.LCD_DispVersion,"ax",%progbits
+ 584              		.align	1
+ 585              		.global	LCD_DispVersion
+ 586              		.syntax unified
+ 587              		.thumb
+ 588              		.thumb_func
+ 589              		.fpu fpv4-sp-d16
+ 591              	LCD_DispVersion:
+ 592              	.LVL66:
+ 593              	.LFB135:
+ 122:Src/lcd.c     **** 
+ 123:Src/lcd.c     **** void LCD_DispVersion(uint8_t num)
+ 124:Src/lcd.c     **** {
+ 594              		.loc 1 124 1 is_stmt 1 view -0
+ 595              		.cfi_startproc
+ 596              		@ args = 0, pretend = 0, frame = 32
+ 597              		@ frame_needed = 0, uses_anonymous_args = 0
+ 598              		.loc 1 124 1 is_stmt 0 view .LVU106
+ 599 0000 30B5     		push	{r4, r5, lr}
+ 600              	.LCFI9:
+ 601              		.cfi_def_cfa_offset 12
+ 602              		.cfi_offset 4, -12
+ 603              		.cfi_offset 5, -8
+ 604              		.cfi_offset 14, -4
+ 605 0002 89B0     		sub	sp, sp, #36
+ 606              	.LCFI10:
+ 607              		.cfi_def_cfa_offset 48
+ 608 0004 0546     		mov	r5, r0
+ 125:Src/lcd.c     ****     char line0[16] = {0x00};
+ 609              		.loc 1 125 5 is_stmt 1 view .LVU107
+ 610              		.loc 1 125 10 is_stmt 0 view .LVU108
+ 611 0006 0024     		movs	r4, #0
+ 612 0008 0494     		str	r4, [sp, #16]
+ 613 000a 0594     		str	r4, [sp, #20]
+ 614 000c 0694     		str	r4, [sp, #24]
+ 615 000e 0794     		str	r4, [sp, #28]
+ 126:Src/lcd.c     ****     char line1[16] = {0x00};
+ 616              		.loc 1 126 5 is_stmt 1 view .LVU109
+ 617              		.loc 1 126 10 is_stmt 0 view .LVU110
+ 618 0010 0094     		str	r4, [sp]
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 14
+
+
+ 619 0012 0194     		str	r4, [sp, #4]
+ 620 0014 0294     		str	r4, [sp, #8]
+ 621 0016 0394     		str	r4, [sp, #12]
+ 127:Src/lcd.c     ****     LCD_ClearScreen();
+ 622              		.loc 1 127 5 is_stmt 1 view .LVU111
+ 623 0018 FFF7FEFF 		bl	LCD_ClearScreen
+ 624              	.LVL67:
+ 128:Src/lcd.c     ****     sprintf(line0, "MSIP:V%d.%d", num / 100, num % 100);
+ 625              		.loc 1 128 5 view .LVU112
+ 626 001c 0E4A     		ldr	r2, .L33
+ 627 001e A2FB0532 		umull	r3, r2, r2, r5
+ 628 0022 5209     		lsrs	r2, r2, #5
+ 629 0024 6423     		movs	r3, #100
+ 630 0026 03FB1253 		mls	r3, r3, r2, r5
+ 631 002a DBB2     		uxtb	r3, r3
+ 632 002c 0B49     		ldr	r1, .L33+4
+ 633 002e 04A8     		add	r0, sp, #16
+ 634 0030 FFF7FEFF 		bl	sprintf
+ 635              	.LVL68:
+ 129:Src/lcd.c     ****     LCD_DispStr(0, 0, line0);
+ 636              		.loc 1 129 5 view .LVU113
+ 637 0034 04AA     		add	r2, sp, #16
+ 638 0036 2146     		mov	r1, r4
+ 639 0038 2046     		mov	r0, r4
+ 640 003a FFF7FEFF 		bl	LCD_DispStr
+ 641              	.LVL69:
+ 130:Src/lcd.c     ****     sprintf(line1, "%s", __DATE__);
+ 642              		.loc 1 130 5 view .LVU114
+ 643 003e 6B46     		mov	r3, sp
+ 644 0040 074A     		ldr	r2, .L33+8
+ 645 0042 07CA     		ldm	r2, {r0, r1, r2}
+ 646 0044 83E80700 		stm	r3, {r0, r1, r2}
+ 131:Src/lcd.c     ****     LCD_DispStr(0, 1, line1);
+ 647              		.loc 1 131 5 view .LVU115
+ 648 0048 1A46     		mov	r2, r3
+ 649 004a 0121     		movs	r1, #1
+ 650 004c 2046     		mov	r0, r4
+ 651 004e FFF7FEFF 		bl	LCD_DispStr
+ 652              	.LVL70:
+ 132:Src/lcd.c     **** }...
+ 653              		.loc 1 132 1 is_stmt 0 view .LVU116
+ 654 0052 09B0     		add	sp, sp, #36
+ 655              	.LCFI11:
+ 656              		.cfi_def_cfa_offset 12
+ 657              		@ sp needed
+ 658 0054 30BD     		pop	{r4, r5, pc}
+ 659              	.L34:
+ 660 0056 00BF     		.align	2
+ 661              	.L33:
+ 662 0058 1F85EB51 		.word	1374389535
+ 663 005c 00000000 		.word	.LC0
+ 664 0060 0C000000 		.word	.LC1
+ 665              		.cfi_endproc
+ 666              	.LFE135:
+ 668              		.global	MsgBuf
+ 669              		.section	.bss.MsgBuf,"aw",%nobits
+ 670              		.align	2
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 15
+
+
+ 671              		.set	.LANCHOR0,. + 0
+ 674              	MsgBuf:
+ 675 0000 00000000 		.space	16
+ 675      00000000 
+ 675      00000000 
+ 675      00000000 
+ 676              		.text
+ 677              	.Letext0:
+ 678              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 679              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 680              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
+ 681              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 682              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h"
+ 683              		.file 7 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 684              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 685              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\lib\\gcc\\arm-none-eabi
+ 686              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include
+ 687              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 688              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
+ 689              		.file 13 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include
+ 690              		.file 14 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include
+ 691              		.file 15 "<built-in>"
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s 			page 16
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 lcd.c
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:18     .text.LCD_WriteDBUS:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:26     .text.LCD_WriteDBUS:00000000 LCD_WriteDBUS
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:101    .text.LCD_WriteDBUS:00000058 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:106    .text.LCD_WriteDB:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:113    .text.LCD_WriteDB:00000000 LCD_WriteDB
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:188    .text.LCD_WriteDB:00000068 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:193    .text.LCD_WriteCmd:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:200    .text.LCD_WriteCmd:00000000 LCD_WriteCmd
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:265    .text.LCD_Init:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:272    .text.LCD_Init:00000000 LCD_Init
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:321    .text.LCD_WriteData:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:328    .text.LCD_WriteData:00000000 LCD_WriteData
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:393    .text.LCD_ClearScreen:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:400    .text.LCD_ClearScreen:00000000 LCD_ClearScreen
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:421    .text.LCD_SetCursor:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:428    .text.LCD_SetCursor:00000000 LCD_SetCursor
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:465    .text.LCD_DispStr:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:472    .text.LCD_DispStr:00000000 LCD_DispStr
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:512    .text.LCD_DispMsg:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:519    .text.LCD_DispMsg:00000000 LCD_DispMsg
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:572    .text.LCD_DispMsg:00000034 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:577    .rodata.LCD_DispVersion.str1.4:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:584    .text.LCD_DispVersion:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:591    .text.LCD_DispVersion:00000000 LCD_DispVersion
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:662    .text.LCD_DispVersion:00000058 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:674    .bss.MsgBuf:00000000 MsgBuf
+C:\Users\SHINRA~1\AppData\Local\Temp\ccEBfVRf.s:670    .bss.MsgBuf:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
+HAL_Delay
+strlen
+memcpy
+sprintf

@@ -1,0 +1,364 @@
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 27, 1
+   3              		.eabi_attribute 28, 1
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"led.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.ALL_LED_ON,"ax",%progbits
+  18              		.align	1
+  19              		.global	ALL_LED_ON
+  20              		.arch armv7e-m
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
+  24              		.fpu fpv4-sp-d16
+  26              	ALL_LED_ON:
+  27              	.LFB126:
+  28              		.file 1 "Src/led.c"
+   1:Src/led.c     **** #include "led.h"
+   2:Src/led.c     **** 
+   3:Src/led.c     **** /*
+   4:Src/led.c     **** LD3: Red
+   5:Src/led.c     **** LD7: Green
+   6:Src/led.c     **** LD4: Blue
+   7:Src/led.c     **** */
+   8:Src/led.c     **** 
+   9:Src/led.c     **** void ALL_LED_ON()
+  10:Src/led.c     **** {
+  29              		.loc 1 10 1 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 10B5     		push	{r4, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 4, -8
+  37              		.cfi_offset 14, -4
+  11:Src/led.c     ****     HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
+  38              		.loc 1 11 5 view .LVU1
+  39 0002 0A4C     		ldr	r4, .L3
+  40 0004 0122     		movs	r2, #1
+  41 0006 4FF40071 		mov	r1, #512
+  42 000a 2046     		mov	r0, r4
+  43 000c FFF7FEFF 		bl	HAL_GPIO_WritePin
+  44              	.LVL0:
+  12:Src/led.c     ****     HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_SET);
+  45              		.loc 1 12 5 view .LVU2
+  46 0010 0122     		movs	r2, #1
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s 			page 2
+
+
+  47 0012 4FF48071 		mov	r1, #256
+  48 0016 2046     		mov	r0, r4
+  49 0018 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  50              	.LVL1:
+  13:Src/led.c     ****     HAL_GPIO_WritePin(LD7_GPIO_Port, LD7_Pin, GPIO_PIN_SET);
+  51              		.loc 1 13 5 view .LVU3
+  52 001c 0122     		movs	r2, #1
+  53 001e 4FF40061 		mov	r1, #2048
+  54 0022 2046     		mov	r0, r4
+  55 0024 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  56              	.LVL2:
+  14:Src/led.c     **** }
+  57              		.loc 1 14 1 is_stmt 0 view .LVU4
+  58 0028 10BD     		pop	{r4, pc}
+  59              	.L4:
+  60 002a 00BF     		.align	2
+  61              	.L3:
+  62 002c 00100048 		.word	1207963648
+  63              		.cfi_endproc
+  64              	.LFE126:
+  66              		.section	.text.ALL_LED_OFF,"ax",%progbits
+  67              		.align	1
+  68              		.global	ALL_LED_OFF
+  69              		.syntax unified
+  70              		.thumb
+  71              		.thumb_func
+  72              		.fpu fpv4-sp-d16
+  74              	ALL_LED_OFF:
+  75              	.LFB127:
+  15:Src/led.c     **** 
+  16:Src/led.c     **** void ALL_LED_OFF()
+  17:Src/led.c     **** {
+  76              		.loc 1 17 1 is_stmt 1 view -0
+  77              		.cfi_startproc
+  78              		@ args = 0, pretend = 0, frame = 0
+  79              		@ frame_needed = 0, uses_anonymous_args = 0
+  80 0000 10B5     		push	{r4, lr}
+  81              	.LCFI1:
+  82              		.cfi_def_cfa_offset 8
+  83              		.cfi_offset 4, -8
+  84              		.cfi_offset 14, -4
+  18:Src/led.c     ****     HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
+  85              		.loc 1 18 5 view .LVU6
+  86 0002 0A4C     		ldr	r4, .L7
+  87 0004 0022     		movs	r2, #0
+  88 0006 4FF40071 		mov	r1, #512
+  89 000a 2046     		mov	r0, r4
+  90 000c FFF7FEFF 		bl	HAL_GPIO_WritePin
+  91              	.LVL3:
+  19:Src/led.c     ****     HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_RESET);
+  92              		.loc 1 19 5 view .LVU7
+  93 0010 0022     		movs	r2, #0
+  94 0012 4FF48071 		mov	r1, #256
+  95 0016 2046     		mov	r0, r4
+  96 0018 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  97              	.LVL4:
+  20:Src/led.c     ****     HAL_GPIO_WritePin(LD7_GPIO_Port, LD7_Pin, GPIO_PIN_RESET);
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s 			page 3
+
+
+  98              		.loc 1 20 5 view .LVU8
+  99 001c 0022     		movs	r2, #0
+ 100 001e 4FF40061 		mov	r1, #2048
+ 101 0022 2046     		mov	r0, r4
+ 102 0024 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 103              	.LVL5:
+  21:Src/led.c     **** }
+ 104              		.loc 1 21 1 is_stmt 0 view .LVU9
+ 105 0028 10BD     		pop	{r4, pc}
+ 106              	.L8:
+ 107 002a 00BF     		.align	2
+ 108              	.L7:
+ 109 002c 00100048 		.word	1207963648
+ 110              		.cfi_endproc
+ 111              	.LFE127:
+ 113              		.section	.text.FlashLED,"ax",%progbits
+ 114              		.align	1
+ 115              		.global	FlashLED
+ 116              		.syntax unified
+ 117              		.thumb
+ 118              		.thumb_func
+ 119              		.fpu fpv4-sp-d16
+ 121              	FlashLED:
+ 122              	.LVL6:
+ 123              	.LFB128:
+  22:Src/led.c     **** 
+  23:Src/led.c     **** void FlashLED(uint8_t t)
+  24:Src/led.c     **** {
+ 124              		.loc 1 24 1 is_stmt 1 view -0
+ 125              		.cfi_startproc
+ 126              		@ args = 0, pretend = 0, frame = 0
+ 127              		@ frame_needed = 0, uses_anonymous_args = 0
+ 128              		.loc 1 24 1 is_stmt 0 view .LVU11
+ 129 0000 38B5     		push	{r3, r4, r5, lr}
+ 130              	.LCFI2:
+ 131              		.cfi_def_cfa_offset 16
+ 132              		.cfi_offset 3, -16
+ 133              		.cfi_offset 4, -12
+ 134              		.cfi_offset 5, -8
+ 135              		.cfi_offset 14, -4
+ 136 0002 0546     		mov	r5, r0
+  25:Src/led.c     ****     for (uint8_t i = 0; i < t; i++)
+ 137              		.loc 1 25 5 is_stmt 1 view .LVU12
+ 138              	.LBB2:
+ 139              		.loc 1 25 10 view .LVU13
+ 140              	.LVL7:
+ 141              		.loc 1 25 18 is_stmt 0 view .LVU14
+ 142 0004 0024     		movs	r4, #0
+ 143              	.LVL8:
+ 144              	.L10:
+ 145              		.loc 1 25 25 is_stmt 1 discriminator 1 view .LVU15
+ 146              		.loc 1 25 5 is_stmt 0 discriminator 1 view .LVU16
+ 147 0006 AC42     		cmp	r4, r5
+ 148 0008 0CD2     		bcs	.L13
+  26:Src/led.c     ****     {
+  27:Src/led.c     ****         ALL_LED_ON();
+ 149              		.loc 1 27 9 is_stmt 1 discriminator 3 view .LVU17
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s 			page 4
+
+
+ 150 000a FFF7FEFF 		bl	ALL_LED_ON
+ 151              	.LVL9:
+  28:Src/led.c     ****         HAL_Delay(100);
+ 152              		.loc 1 28 9 discriminator 3 view .LVU18
+ 153 000e 6420     		movs	r0, #100
+ 154 0010 FFF7FEFF 		bl	HAL_Delay
+ 155              	.LVL10:
+  29:Src/led.c     ****         ALL_LED_OFF();
+ 156              		.loc 1 29 9 discriminator 3 view .LVU19
+ 157 0014 FFF7FEFF 		bl	ALL_LED_OFF
+ 158              	.LVL11:
+  30:Src/led.c     ****         HAL_Delay(100);
+ 159              		.loc 1 30 9 discriminator 3 view .LVU20
+ 160 0018 6420     		movs	r0, #100
+ 161 001a FFF7FEFF 		bl	HAL_Delay
+ 162              	.LVL12:
+  25:Src/led.c     ****     {
+ 163              		.loc 1 25 32 discriminator 3 view .LVU21
+  25:Src/led.c     ****     {
+ 164              		.loc 1 25 33 is_stmt 0 discriminator 3 view .LVU22
+ 165 001e 0134     		adds	r4, r4, #1
+ 166              	.LVL13:
+  25:Src/led.c     ****     {
+ 167              		.loc 1 25 33 discriminator 3 view .LVU23
+ 168 0020 E4B2     		uxtb	r4, r4
+ 169              	.LVL14:
+  25:Src/led.c     ****     {
+ 170              		.loc 1 25 33 discriminator 3 view .LVU24
+ 171 0022 F0E7     		b	.L10
+ 172              	.L13:
+  25:Src/led.c     ****     {
+ 173              		.loc 1 25 33 discriminator 3 view .LVU25
+ 174              	.LBE2:
+  31:Src/led.c     ****     }
+  32:Src/led.c     **** }
+ 175              		.loc 1 32 1 view .LVU26
+ 176 0024 38BD     		pop	{r3, r4, r5, pc}
+ 177              		.loc 1 32 1 view .LVU27
+ 178              		.cfi_endproc
+ 179              	.LFE128:
+ 181              		.section	.text.BlinkLED,"ax",%progbits
+ 182              		.align	1
+ 183              		.global	BlinkLED
+ 184              		.syntax unified
+ 185              		.thumb
+ 186              		.thumb_func
+ 187              		.fpu fpv4-sp-d16
+ 189              	BlinkLED:
+ 190              	.LVL15:
+ 191              	.LFB129:
+  33:Src/led.c     **** 
+  34:Src/led.c     **** void BlinkLED(uint8_t nLED)
+  35:Src/led.c     **** {
+ 192              		.loc 1 35 1 is_stmt 1 view -0
+ 193              		.cfi_startproc
+ 194              		@ args = 0, pretend = 0, frame = 0
+ 195              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s 			page 5
+
+
+ 196              		.loc 1 35 1 is_stmt 0 view .LVU29
+ 197 0000 08B5     		push	{r3, lr}
+ 198              	.LCFI3:
+ 199              		.cfi_def_cfa_offset 8
+ 200              		.cfi_offset 3, -8
+ 201              		.cfi_offset 14, -4
+  36:Src/led.c     ****     switch (nLED)
+ 202              		.loc 1 36 5 is_stmt 1 view .LVU30
+ 203 0002 0138     		subs	r0, r0, #1
+ 204              	.LVL16:
+ 205              		.loc 1 36 5 is_stmt 0 view .LVU31
+ 206 0004 0328     		cmp	r0, #3
+ 207 0006 08D8     		bhi	.L14
+ 208 0008 DFE800F0 		tbb	[pc, r0]
+ 209              	.L17:
+ 210 000c 02       		.byte	(.L20-.L17)/2
+ 211 000d 08       		.byte	(.L19-.L17)/2
+ 212 000e 0E       		.byte	(.L18-.L17)/2
+ 213 000f 14       		.byte	(.L16-.L17)/2
+ 214              		.p2align 1
+ 215              	.L20:
+  37:Src/led.c     ****     {
+  38:Src/led.c     ****     case 1: // Red
+  39:Src/led.c     ****         HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+ 216              		.loc 1 39 9 is_stmt 1 view .LVU32
+ 217 0010 4FF40071 		mov	r1, #512
+ 218 0014 0A48     		ldr	r0, .L22
+ 219 0016 FFF7FEFF 		bl	HAL_GPIO_TogglePin
+ 220              	.LVL17:
+  40:Src/led.c     ****         break;
+ 221              		.loc 1 40 9 view .LVU33
+ 222              	.L14:
+  41:Src/led.c     ****     case 2: // Green
+  42:Src/led.c     ****         HAL_GPIO_TogglePin(LD7_GPIO_Port, LD7_Pin);
+  43:Src/led.c     ****         break;
+  44:Src/led.c     ****     case 3: // Blue
+  45:Src/led.c     ****         HAL_GPIO_TogglePin(LD4_GPIO_Port, LD4_Pin);
+  46:Src/led.c     ****         break;
+  47:Src/led.c     ****     case 4: // Orange
+  48:Src/led.c     ****         HAL_GPIO_TogglePin(LD5_GPIO_Port, LD5_Pin);
+  49:Src/led.c     ****         break;
+  50:Src/led.c     ****     }
+  51:Src/led.c     **** }
+ 223              		.loc 1 51 1 is_stmt 0 view .LVU34
+ 224 001a 08BD     		pop	{r3, pc}
+ 225              	.L19:
+  42:Src/led.c     ****         break;
+ 226              		.loc 1 42 9 is_stmt 1 view .LVU35
+ 227 001c 4FF40061 		mov	r1, #2048
+ 228 0020 0748     		ldr	r0, .L22
+ 229 0022 FFF7FEFF 		bl	HAL_GPIO_TogglePin
+ 230              	.LVL18:
+  43:Src/led.c     ****     case 3: // Blue
+ 231              		.loc 1 43 9 view .LVU36
+ 232 0026 F8E7     		b	.L14
+ 233              	.L18:
+  45:Src/led.c     ****         break;
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s 			page 6
+
+
+ 234              		.loc 1 45 9 view .LVU37
+ 235 0028 4FF48071 		mov	r1, #256
+ 236 002c 0448     		ldr	r0, .L22
+ 237 002e FFF7FEFF 		bl	HAL_GPIO_TogglePin
+ 238              	.LVL19:
+  46:Src/led.c     ****     case 4: // Orange
+ 239              		.loc 1 46 9 view .LVU38
+ 240 0032 F2E7     		b	.L14
+ 241              	.L16:
+  48:Src/led.c     ****         break;
+ 242              		.loc 1 48 9 view .LVU39
+ 243 0034 4FF48061 		mov	r1, #1024
+ 244 0038 0148     		ldr	r0, .L22
+ 245 003a FFF7FEFF 		bl	HAL_GPIO_TogglePin
+ 246              	.LVL20:
+  49:Src/led.c     ****     }
+ 247              		.loc 1 49 9 view .LVU40
+ 248              		.loc 1 51 1 is_stmt 0 view .LVU41
+ 249 003e ECE7     		b	.L14
+ 250              	.L23:
+ 251              		.align	2
+ 252              	.L22:
+ 253 0040 00100048 		.word	1207963648
+ 254              		.cfi_endproc
+ 255              	.LFE129:
+ 257              		.text
+ 258              	.Letext0:
+ 259              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 260              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 261              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
+ 262              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 263              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h"
+ 264              		.file 7 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 265              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 266              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\lib\\gcc\\arm-none-eabi
+ 267              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include
+ 268              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 269              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 led.c
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:18     .text.ALL_LED_ON:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:26     .text.ALL_LED_ON:00000000 ALL_LED_ON
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:62     .text.ALL_LED_ON:0000002c $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:67     .text.ALL_LED_OFF:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:74     .text.ALL_LED_OFF:00000000 ALL_LED_OFF
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:109    .text.ALL_LED_OFF:0000002c $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:114    .text.FlashLED:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:121    .text.FlashLED:00000000 FlashLED
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:182    .text.BlinkLED:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:189    .text.BlinkLED:00000000 BlinkLED
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:210    .text.BlinkLED:0000000c $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:214    .text.BlinkLED:00000010 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccHeWN6A.s:253    .text.BlinkLED:00000040 $d
+
+UNDEFINED SYMBOLS
+HAL_GPIO_WritePin
+HAL_Delay
+HAL_GPIO_TogglePin

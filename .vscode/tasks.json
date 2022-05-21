@@ -1,0 +1,43 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build",
+            "command": "make",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Build & Update",
+            "command": "openocd",
+            "args": [
+                "-f",
+                "C:/OpenOCD-0.11.0/share/openocd/scripts/interface/stlink.cfg",
+                "-f",
+                "C:/OpenOCD-0.11.0/share/openocd/scripts/target/stm32f3x.cfg",
+                "-c",
+                "program build/MSIP.elf verify reset exit"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "dependsOn": "Build"
+        },
+        {
+            "type": "shell",
+            "label": "Reset",
+            "command": "make reset",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}
