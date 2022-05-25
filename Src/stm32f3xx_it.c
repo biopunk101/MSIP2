@@ -32,7 +32,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define SampleRate 21
+#define SampleRate 10
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -47,6 +47,7 @@ uint8_t BBuf[64] = {0x00};
 uint8_t NextBuf = 0;
 
 uint32_t SignalAvg = 0;
+uint32_t SignalL = 0, signalR = 0;
 
 uint8_t skip = 0;
 uint8_t t4tick = 0;
@@ -60,6 +61,9 @@ uint8_t txidx = 0;
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+extern uint8_t SignalTmp[64];
+extern uint32_t SignalVal;
+
 extern uint8_t JP2_MODE, JP1_MODE;
 extern uint16_t ADC_Values[4];
 uint8_t t2cnt = 0;
@@ -226,7 +230,26 @@ void SysTick_Handler(void)
 void DMA1_Channel4_IRQHandler(void)
 {
   /* USER CODE BEGIN DMA1_Channel4_IRQn 0 */
+  // pingpong buffer
+  if (!NextBuf)
+  { // ABuf[txidx++] = SignalAvg;
+    memcpy(&ABuf[0], &SignalTmp, 64);
+    BlinkLED(3);
+    // txidx++;
+  }
+  else
+  { // BBuf[txidx++] = SignalAvg;
+    memcpy(&BBuf[0], &SignalTmp, 64);
+    BlinkLED(4);
+    // txidx++;
+  }
 
+  // if (txidx >= SampleRate) // 32->128?
+  //{
+  NextBuf ^= 1;
+  TX_Flag = 1;
+  // txidx = 0;
+  //}
   /* USER CODE END DMA1_Channel4_IRQn 0 */
   HAL_DMA_IRQHandler(&hdma_spi2_rx);
   /* USER CODE BEGIN DMA1_Channel4_IRQn 1 */
@@ -309,33 +332,10 @@ void TIM3_IRQHandler(void)
 #ifdef SIMULATOR
     SignalAvg = GenerateSignal();
 #else
-    HAL_I2S_Receive_IT(&hi2s2, (uint16_t *)&SignalAvg, 3);
-
+    // HAL_I2S_Receive_IT(&hi2s2, (uint16_t *)&SignalTmp, 3);
 #endif
-
-    // pingpong buffer
-    if (!NextBuf)
-    { // ABuf[txidx++] = SignalAvg;
-      memcpy(&ABuf[txidx * 3], &SignalAvg, 3);
-      BlinkLED(3);
-      txidx++;
-    }
-    else
-    { // BBuf[txidx++] = SignalAvg;
-      memcpy(&BBuf[txidx * 3], &SignalAvg, 3);
-      BlinkLED(4);
-      txidx++;
-    }
-
-    if (txidx >= SampleRate) // 32->128?
-    {
-
-      NextBuf ^= 1;
-      TX_Flag = 1;
-      txidx = 0;
-    }
   }
-  // skip ^= 1; half sampling
+  skip ^= 1; // half sampling
 
   /* USER CODE END TIM3_IRQn 0 */
   HAL_TIM_IRQHandler(&htim3);
