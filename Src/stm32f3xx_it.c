@@ -61,8 +61,9 @@ uint8_t txidx = 0;
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-extern uint8_t SignalTmp[64];
+extern uint8_t SignalTmp[192];
 extern uint32_t SignalVal;
+extern uint16_t DMABufSize;
 
 extern uint8_t JP2_MODE, JP1_MODE;
 extern uint16_t ADC_Values[4];
@@ -230,26 +231,7 @@ void SysTick_Handler(void)
 void DMA1_Channel4_IRQHandler(void)
 {
   /* USER CODE BEGIN DMA1_Channel4_IRQn 0 */
-  // pingpong buffer
-  if (!NextBuf)
-  { // ABuf[txidx++] = SignalAvg;
-    memcpy(&ABuf[0], &SignalTmp, 64);
-    BlinkLED(3);
-    // txidx++;
-  }
-  else
-  { // BBuf[txidx++] = SignalAvg;
-    memcpy(&BBuf[0], &SignalTmp, 64);
-    BlinkLED(4);
-    // txidx++;
-  }
 
-  // if (txidx >= SampleRate) // 32->128?
-  //{
-  NextBuf ^= 1;
-  TX_Flag = 1;
-  // txidx = 0;
-  //}
   /* USER CODE END DMA1_Channel4_IRQn 0 */
   HAL_DMA_IRQHandler(&hdma_spi2_rx);
   /* USER CODE BEGIN DMA1_Channel4_IRQn 1 */

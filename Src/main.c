@@ -68,8 +68,12 @@ uint8_t TX_Flag = 0;
 
 uint8_t ButtonPressed = 0;
 uint8_t TransferFlag = 0;
-uint8_t SignalTmp[64] = {0x00};
+// maybe use 4byte in and 3 byte out?
+volatile uint8_t SignalTmp[192] = {0x00};
+uint16_t DMABufSize = 192;
 uint32_t SignalVal = 0;
+
+uint8_t FLAG_half = 0, FLAG_comp = 0;
 /* USER CODE END 0 */
 
 /**
@@ -114,7 +118,7 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim3);
   HAL_TIM_Base_Start_IT(&htim4);
   // HAL_I2S_Receive_IT(&hi2s2, (uint16_t *)&SignalTmp, 3);
-  HAL_I2S_Receive_DMA(&hi2s2, (uint16_t *)&SignalTmp[0], 64);
+  HAL_I2S_Receive_DMA(&hi2s2, (uint16_t *)&SignalTmp[0], 192 / 2);
   // HAL_I2S_DMAResume(&hi2s2);
   /* USER CODE END 2 */
 
@@ -141,10 +145,19 @@ int main(void)
       TransferFlag ^= 1;
       ButtonPressed = 0;
     }
-
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    if (FLAG_half)
+    {
+      FLAG_half = 0;
+      // add your code: data shift [0:250]...
+    }
+    if (FLAG_comp)
+    {
+      FLAG_comp = 0;
+      // add your code: data shift [250:500]...
+    }
   }
   /* USER CODE END 3 */
 }
@@ -197,7 +210,15 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_I2S_RxHalfCpltCallback(I2S_HandleTypeDef *hi2s)
+{
+  FLAG_half = 1; // fill buffer half
+}
 
+void HAL_I2S_RxCpltCallback(I2S_HandleTypeDef *hi2s)
+{
+  FLAG_comp = 1;
+}
 /* USER CODE END 4 */
 
 /**
