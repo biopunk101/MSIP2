@@ -34,7 +34,7 @@ build/main.o: Src/main.c Inc/main.h \
  Inc/main.h Inc/i2c.h Inc/i2s.h Inc/spi.h Inc/tim.h Inc/usart.h \
  Inc/usb_device.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
- Inc/usbd_conf.h Inc/gpio.h
+ Inc/usbd_conf.h Inc/gpio.h Inc/led.h
 
 Inc/main.h:
 
@@ -127,3 +127,5 @@ Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
 Inc/usbd_conf.h:
 
 Inc/gpio.h:
+
+Inc/led.h:

@@ -61,7 +61,7 @@ uint8_t txidx = 0;
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-extern uint8_t SignalTmp[192];
+// extern uint8_t SignalTmp[96];
 extern uint32_t SignalVal;
 extern uint16_t DMABufSize;
 
@@ -71,9 +71,7 @@ uint8_t t2cnt = 0;
 uint16_t val = 0;
 uint8_t up = 0;
 uint16_t cdctick = 0;
-extern uint16_t TxFrame[32];
 extern uint8_t TX_Flag;
-extern uint8_t TXBuf[64];
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -287,15 +285,7 @@ void USB_LP_CAN_RX0_IRQHandler(void)
 void TIM2_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM2_IRQn 0 */
-  if (TX_Flag)
-  {
-    if (NextBuf)
-      CDC_Transmit_FS(ABuf, SampleRate * 3);
-    else
-      CDC_Transmit_FS(BBuf, SampleRate * 3);
 
-    TX_Flag = 0;
-  }
   /* USER CODE END TIM2_IRQn 0 */
   HAL_TIM_IRQHandler(&htim2);
   /* USER CODE BEGIN TIM2_IRQn 1 */

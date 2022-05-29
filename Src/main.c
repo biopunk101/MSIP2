@@ -28,6 +28,7 @@
 #include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
+#include "led.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -69,9 +70,9 @@ uint8_t TX_Flag = 0;
 uint8_t ButtonPressed = 0;
 uint8_t TransferFlag = 0;
 // maybe use 4byte in and 3 byte out?
-volatile uint8_t SignalTmp[192] = {0x00};
-uint16_t DMABufSize = 192;
-uint32_t SignalVal = 0;
+uint32_t SignalTmp[32] = {0x00};
+// uint16_t DMABufSize = 192;
+// uint32_t SignalVal = 0;
 
 uint8_t FLAG_half = 0, FLAG_comp = 0;
 /* USER CODE END 0 */
@@ -117,9 +118,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim3);
   HAL_TIM_Base_Start_IT(&htim4);
-  // HAL_I2S_Receive_IT(&hi2s2, (uint16_t *)&SignalTmp, 3);
-  HAL_I2S_Receive_DMA(&hi2s2, (uint16_t *)&SignalTmp[0], 192 / 2);
-  // HAL_I2S_DMAResume(&hi2s2);
+  HAL_I2S_Receive_DMA(&hi2s2, (uint16_t *)&SignalTmp[0], 8);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -140,6 +139,8 @@ int main(void)
       {
         HAL_TIM_Base_Stop_IT(&htim2);
         HAL_GPIO_WritePin(LD7_GPIO_Port, LD7_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(LD4_GPIO_Port, LD4_Pin, GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin, GPIO_PIN_RESET);
       }
 
       TransferFlag ^= 1;
@@ -152,11 +153,21 @@ int main(void)
     {
       FLAG_half = 0;
       // add your code: data shift [0:250]...
+      if (TransferFlag)
+      {
+        CDC_Transmit_FS(&SignalTmp[0], 4 * 8);
+        BlinkLED(3);
+      }
     }
     if (FLAG_comp)
     {
       FLAG_comp = 0;
       // add your code: data shift [250:500]...
+      if (TransferFlag)
+      {
+        CDC_Transmit_FS(&SignalTmp[8], 4 * 8);
+        BlinkLED(4);
+      }
     }
   }
   /* USER CODE END 3 */
