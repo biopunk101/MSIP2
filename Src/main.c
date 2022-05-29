@@ -70,9 +70,8 @@ uint8_t TX_Flag = 0;
 uint8_t ButtonPressed = 0;
 uint8_t TransferFlag = 0;
 // maybe use 4byte in and 3 byte out?
-uint32_t SignalTmp[32] = {0x00};
-// uint16_t DMABufSize = 192;
-// uint32_t SignalVal = 0;
+uint32_t SignalTmp[16] = {0x00};
+uint8_t BufSize = 8;
 
 uint8_t FLAG_half = 0, FLAG_comp = 0;
 /* USER CODE END 0 */
@@ -118,7 +117,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim3);
   HAL_TIM_Base_Start_IT(&htim4);
-  HAL_I2S_Receive_DMA(&hi2s2, (uint16_t *)&SignalTmp[0], 8);
+  HAL_I2S_Receive_DMA(&hi2s2, (uint16_t *)&SignalTmp[0], BufSize);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -155,7 +154,7 @@ int main(void)
       // add your code: data shift [0:250]...
       if (TransferFlag)
       {
-        CDC_Transmit_FS(&SignalTmp[0], 4 * 8);
+        CDC_Transmit_FS(&SignalTmp[0], 4 * BufSize);
         BlinkLED(3);
       }
     }
@@ -165,7 +164,7 @@ int main(void)
       // add your code: data shift [250:500]...
       if (TransferFlag)
       {
-        CDC_Transmit_FS(&SignalTmp[8], 4 * 8);
+        CDC_Transmit_FS(&SignalTmp[BufSize], 4 * BufSize);
         BlinkLED(4);
       }
     }
