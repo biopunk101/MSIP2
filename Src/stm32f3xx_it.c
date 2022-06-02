@@ -72,6 +72,10 @@ uint16_t val = 0;
 uint8_t up = 0;
 uint16_t cdctick = 0;
 extern uint8_t TX_Flag;
+extern uint8_t FLAG_half, FLAG_comp;
+extern uint8_t TransferFlag;
+extern uint32_t SignalTmp[16];
+extern uint8_t BufSize;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -285,6 +289,20 @@ void USB_LP_CAN_RX0_IRQHandler(void)
 void TIM2_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM2_IRQn 0 */
+  if (TransferFlag)
+  {
+    if (FLAG_half)
+    {
+      FLAG_half = 0;
+      // add your code: data shift [0:250]...
+      CDC_Transmit_FS(&SignalTmp[0], 4 * BufSize);
+    }
+    if (FLAG_comp)
+    {
+      FLAG_comp = 0;
+      CDC_Transmit_FS(&SignalTmp[BufSize], 4 * BufSize);
+    }
+  }
 
   /* USER CODE END TIM2_IRQn 0 */
   HAL_TIM_IRQHandler(&htim2);

@@ -148,26 +148,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    if (FLAG_half)
-    {
-      FLAG_half = 0;
-      // add your code: data shift [0:250]...
-      if (TransferFlag)
-      {
-        CDC_Transmit_FS(&SignalTmp[0], 4 * BufSize);
-        BlinkLED(3);
-      }
-    }
-    if (FLAG_comp)
-    {
-      FLAG_comp = 0;
-      // add your code: data shift [250:500]...
-      if (TransferFlag)
-      {
-        CDC_Transmit_FS(&SignalTmp[BufSize], 4 * BufSize);
-        BlinkLED(4);
-      }
-    }
+    
   }
   /* USER CODE END 3 */
 }
@@ -223,11 +204,13 @@ void SystemClock_Config(void)
 void HAL_I2S_RxHalfCpltCallback(I2S_HandleTypeDef *hi2s)
 {
   FLAG_half = 1; // fill buffer half
+  BlinkLED(3);
 }
 
 void HAL_I2S_RxCpltCallback(I2S_HandleTypeDef *hi2s)
 {
   FLAG_comp = 1;
+  BlinkLED(4);
 }
 /* USER CODE END 4 */
 
