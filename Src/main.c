@@ -70,8 +70,8 @@ uint8_t TX_Flag = 0;
 uint8_t ButtonPressed = 0;
 uint8_t TransferFlag = 0;
 // maybe use 4byte in and 3 byte out?
-uint32_t SignalTmp[16] = {0x00};
-uint8_t BufSize = 8;
+uint16_t SignalTmp[32] = {0x00};
+uint8_t BufSize = 16;
 
 uint8_t FLAG_half = 0, FLAG_comp = 0;
 /* USER CODE END 0 */
@@ -148,7 +148,20 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    
+    if (TransferFlag)
+    {
+      if (FLAG_half)
+      {
+        FLAG_half = 0;
+        // add your code: data shift [0:250]...
+        CDC_Transmit_FS(&SignalTmp[0], 4 * BufSize);
+      }
+      if (FLAG_comp)
+      {
+        FLAG_comp = 0;
+        CDC_Transmit_FS(&SignalTmp[BufSize], 4 * BufSize);
+      }
+    }
   }
   /* USER CODE END 3 */
 }

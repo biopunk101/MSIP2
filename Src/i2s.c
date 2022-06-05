@@ -31,10 +31,9 @@ DMA_HandleTypeDef hdma_spi2_tx;
 /* I2S2 init function */
 void MX_I2S2_Init(void)
 {
-
   hi2s2.Instance = SPI2;
   hi2s2.Init.Mode = I2S_MODE_MASTER_RX;
-  hi2s2.Init.Standard = I2S_STANDARD_MSB;
+  hi2s2.Init.Standard = I2S_STANDARD_PHILIPS;
   hi2s2.Init.DataFormat = I2S_DATAFORMAT_24B;
   hi2s2.Init.MCLKOutput = I2S_MCLKOUTPUT_ENABLE;
   hi2s2.Init.AudioFreq = I2S_AUDIOFREQ_48K;
@@ -91,7 +90,7 @@ void HAL_I2S_MspInit(I2S_HandleTypeDef *i2sHandle)
     hdma_spi2_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
     hdma_spi2_rx.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
     hdma_spi2_rx.Init.Mode = DMA_CIRCULAR;
-    hdma_spi2_rx.Init.Priority = DMA_PRIORITY_LOW;
+    hdma_spi2_rx.Init.Priority = DMA_PRIORITY_VERY_HIGH;
     if (HAL_DMA_Init(&hdma_spi2_rx) != HAL_OK)
     {
       Error_Handler();
