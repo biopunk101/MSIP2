@@ -154,12 +154,12 @@ int main(void)
       {
         FLAG_half = 0;
         // add your code: data shift [0:250]...
-        CDC_Transmit_FS(&SignalTmp[0], 4 * BufSize);
+        CDC_Transmit_FS(&SignalTmp[0], 2 * BufSize);
       }
       if (FLAG_comp)
       {
         FLAG_comp = 0;
-        CDC_Transmit_FS(&SignalTmp[BufSize], 4 * BufSize);
+        CDC_Transmit_FS(&SignalTmp[BufSize], 2 * BufSize);
       }
     }
   }
