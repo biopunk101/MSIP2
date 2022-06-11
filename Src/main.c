@@ -71,9 +71,10 @@ uint8_t ButtonPressed = 0;
 uint8_t TransferFlag = 0;
 // maybe use 4byte in and 3 byte out?
 uint16_t SignalTmp[32] = {0x00};
-uint8_t BufSize = 16;
-
+uint8_t BufSize = 4;
+int lSample = 0, rSample = 0;
 uint8_t FLAG_half = 0, FLAG_comp = 0;
+
 /* USER CODE END 0 */
 
 /**

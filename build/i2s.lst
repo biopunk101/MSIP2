@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
   28:Src/i2s.c     **** DMA_HandleTypeDef hdma_spi2_rx;
   29:Src/i2s.c     **** DMA_HandleTypeDef hdma_spi2_tx;
   30:Src/i2s.c     **** 
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 2
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 2
 
 
   31:Src/i2s.c     **** /* I2S2 init function */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
   71              		.loc 1 42 3 is_stmt 1 view .LVU17
   72              		.loc 1 42 29 is_stmt 0 view .LVU18
   73 002a 0123     		movs	r3, #1
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 3
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 3
 
 
   74 002c 0362     		str	r3, [r0, #32]
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
  121 0002 88B0     		sub	sp, sp, #32
  122              	.LCFI2:
  123              		.cfi_def_cfa_offset 48
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 4
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 4
 
 
   51:Src/i2s.c     **** 
@@ -196,7 +196,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
  133              		.loc 1 53 16 is_stmt 0 view .LVU30
  134 0010 0268     		ldr	r2, [r0]
  135              		.loc 1 53 6 view .LVU31
- 136 0012 3D4B     		ldr	r3, .L15
+ 136 0012 3E4B     		ldr	r3, .L15
  137 0014 9A42     		cmp	r2, r3
  138 0016 01D0     		beq	.L12
  139              	.LVL3:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
   88:Src/i2s.c     ****     hdma_spi2_rx.Init.PeriphInc = DMA_PINC_DISABLE;
   89:Src/i2s.c     ****     hdma_spi2_rx.Init.MemInc = DMA_MINC_ENABLE;
   90:Src/i2s.c     ****     hdma_spi2_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 5
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 5
 
 
   91:Src/i2s.c     ****     hdma_spi2_rx.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
@@ -259,7 +259,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
  106:Src/i2s.c     ****     hdma_spi2_tx.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
  107:Src/i2s.c     ****     hdma_spi2_tx.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
  108:Src/i2s.c     ****     hdma_spi2_tx.Init.Mode = DMA_CIRCULAR;
- 109:Src/i2s.c     ****     hdma_spi2_tx.Init.Priority = DMA_PRIORITY_LOW;
+ 109:Src/i2s.c     ****     hdma_spi2_tx.Init.Priority = DMA_PRIORITY_HIGH;
  110:Src/i2s.c     ****     if (HAL_DMA_Init(&hdma_spi2_tx) != HAL_OK)
  111:Src/i2s.c     ****     {
  112:Src/i2s.c     ****       Error_Handler();
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
  158 001e 03F5EC33 		add	r3, r3, #120832
  159 0022 DA69     		ldr	r2, [r3, #28]
  160 0024 42F48042 		orr	r2, r2, #16384
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 6
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 6
 
 
  161 0028 DA61     		str	r2, [r3, #28]
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
   70:Src/i2s.c     ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
  200              		.loc 1 70 5 view .LVU52
   70:Src/i2s.c     ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 7
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 7
 
 
  201              		.loc 1 70 25 is_stmt 0 view .LVU53
@@ -390,7 +390,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
   75:Src/i2s.c     **** 
  219              		.loc 1 75 5 is_stmt 1 view .LVU62
  220 006c 03A9     		add	r1, sp, #12
- 221 006e 2748     		ldr	r0, .L15+4
+ 221 006e 2848     		ldr	r0, .L15+4
  222              	.LVL5:
   75:Src/i2s.c     **** 
  223              		.loc 1 75 5 is_stmt 0 view .LVU63
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
  237              		.loc 1 80 27 is_stmt 0 view .LVU71
  238 007c 0695     		str	r5, [sp, #24]
   81:Src/i2s.c     ****     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 8
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 8
 
 
  239              		.loc 1 81 5 is_stmt 1 view .LVU72
@@ -429,15 +429,15 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
   82:Src/i2s.c     **** 
  243              		.loc 1 82 5 is_stmt 1 view .LVU74
  244 0082 03A9     		add	r1, sp, #12
- 245 0084 2248     		ldr	r0, .L15+8
+ 245 0084 2348     		ldr	r0, .L15+8
  246 0086 FFF7FEFF 		bl	HAL_GPIO_Init
  247              	.LVL7:
   86:Src/i2s.c     ****     hdma_spi2_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
  248              		.loc 1 86 5 view .LVU75
   86:Src/i2s.c     ****     hdma_spi2_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
  249              		.loc 1 86 27 is_stmt 0 view .LVU76
- 250 008a 2248     		ldr	r0, .L15+12
- 251 008c 224B     		ldr	r3, .L15+16
+ 250 008a 2348     		ldr	r0, .L15+12
+ 251 008c 234B     		ldr	r3, .L15+16
  252 008e 0360     		str	r3, [r0]
   87:Src/i2s.c     ****     hdma_spi2_rx.Init.PeriphInc = DMA_PINC_DISABLE;
  253              		.loc 1 87 5 is_stmt 1 view .LVU77
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
   93:Src/i2s.c     ****     if (HAL_DMA_Init(&hdma_spi2_rx) != HAL_OK)
  276              		.loc 1 93 32 is_stmt 0 view .LVU90
  277 00a8 4FF40053 		mov	r3, #8192
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 9
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 9
 
 
  278 00ac C361     		str	r3, [r0, #28]
@@ -490,13 +490,13 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
  282              	.LVL8:
   94:Src/i2s.c     ****     {
  283              		.loc 1 94 8 view .LVU93
- 284 00b2 18BB     		cbnz	r0, .L13
+ 284 00b2 28BB     		cbnz	r0, .L13
  285              	.L9:
   99:Src/i2s.c     **** 
  286              		.loc 1 99 5 is_stmt 1 view .LVU94
   99:Src/i2s.c     **** 
  287              		.loc 1 99 5 view .LVU95
- 288 00b4 174B     		ldr	r3, .L15+12
+ 288 00b4 184B     		ldr	r3, .L15+12
  289 00b6 A363     		str	r3, [r4, #56]
   99:Src/i2s.c     **** 
  290              		.loc 1 99 5 view .LVU96
@@ -507,8 +507,8 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
  293              		.loc 1 102 5 view .LVU98
  102:Src/i2s.c     ****     hdma_spi2_tx.Init.Direction = DMA_MEMORY_TO_PERIPH;
  294              		.loc 1 102 27 is_stmt 0 view .LVU99
- 295 00ba 1848     		ldr	r0, .L15+20
- 296 00bc 184B     		ldr	r3, .L15+24
+ 295 00ba 1948     		ldr	r0, .L15+20
+ 296 00bc 194B     		ldr	r3, .L15+24
  297 00be 0360     		str	r3, [r0]
  103:Src/i2s.c     ****     hdma_spi2_tx.Init.PeriphInc = DMA_PINC_DISABLE;
  298              		.loc 1 103 5 is_stmt 1 view .LVU100
@@ -526,146 +526,147 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
  306              		.loc 1 105 5 is_stmt 1 view .LVU104
  105:Src/i2s.c     ****     hdma_spi2_tx.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
  307              		.loc 1 105 30 is_stmt 0 view .LVU105
- 308 00c8 8022     		movs	r2, #128
- 309 00ca C260     		str	r2, [r0, #12]
+ 308 00c8 8023     		movs	r3, #128
+ 309 00ca C360     		str	r3, [r0, #12]
  106:Src/i2s.c     ****     hdma_spi2_tx.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
  310              		.loc 1 106 5 is_stmt 1 view .LVU106
  106:Src/i2s.c     ****     hdma_spi2_tx.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
  311              		.loc 1 106 43 is_stmt 0 view .LVU107
- 312 00cc 4FF48072 		mov	r2, #256
- 313 00d0 0261     		str	r2, [r0, #16]
+ 312 00cc 4FF48073 		mov	r3, #256
+ 313 00d0 0361     		str	r3, [r0, #16]
  107:Src/i2s.c     ****     hdma_spi2_tx.Init.Mode = DMA_CIRCULAR;
  314              		.loc 1 107 5 is_stmt 1 view .LVU108
  107:Src/i2s.c     ****     hdma_spi2_tx.Init.Mode = DMA_CIRCULAR;
  315              		.loc 1 107 40 is_stmt 0 view .LVU109
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 10
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 10
 
 
- 316 00d2 4FF48062 		mov	r2, #1024
- 317 00d6 4261     		str	r2, [r0, #20]
- 108:Src/i2s.c     ****     hdma_spi2_tx.Init.Priority = DMA_PRIORITY_LOW;
+ 316 00d2 4FF48063 		mov	r3, #1024
+ 317 00d6 4361     		str	r3, [r0, #20]
+ 108:Src/i2s.c     ****     hdma_spi2_tx.Init.Priority = DMA_PRIORITY_HIGH;
  318              		.loc 1 108 5 is_stmt 1 view .LVU110
- 108:Src/i2s.c     ****     hdma_spi2_tx.Init.Priority = DMA_PRIORITY_LOW;
+ 108:Src/i2s.c     ****     hdma_spi2_tx.Init.Priority = DMA_PRIORITY_HIGH;
  319              		.loc 1 108 28 is_stmt 0 view .LVU111
- 320 00d8 2022     		movs	r2, #32
- 321 00da 8261     		str	r2, [r0, #24]
+ 320 00d8 2023     		movs	r3, #32
+ 321 00da 8361     		str	r3, [r0, #24]
  109:Src/i2s.c     ****     if (HAL_DMA_Init(&hdma_spi2_tx) != HAL_OK)
  322              		.loc 1 109 5 is_stmt 1 view .LVU112
  109:Src/i2s.c     ****     if (HAL_DMA_Init(&hdma_spi2_tx) != HAL_OK)
  323              		.loc 1 109 32 is_stmt 0 view .LVU113
- 324 00dc C361     		str	r3, [r0, #28]
+ 324 00dc 4FF40053 		mov	r3, #8192
+ 325 00e0 C361     		str	r3, [r0, #28]
  110:Src/i2s.c     ****     {
- 325              		.loc 1 110 5 is_stmt 1 view .LVU114
+ 326              		.loc 1 110 5 is_stmt 1 view .LVU114
  110:Src/i2s.c     ****     {
- 326              		.loc 1 110 9 is_stmt 0 view .LVU115
- 327 00de FFF7FEFF 		bl	HAL_DMA_Init
- 328              	.LVL9:
+ 327              		.loc 1 110 9 is_stmt 0 view .LVU115
+ 328 00e2 FFF7FEFF 		bl	HAL_DMA_Init
+ 329              	.LVL9:
  110:Src/i2s.c     ****     {
- 329              		.loc 1 110 8 view .LVU116
- 330 00e2 70B9     		cbnz	r0, .L14
- 331              	.L10:
+ 330              		.loc 1 110 8 view .LVU116
+ 331 00e6 70B9     		cbnz	r0, .L14
+ 332              	.L10:
  115:Src/i2s.c     **** 
- 332              		.loc 1 115 5 is_stmt 1 view .LVU117
+ 333              		.loc 1 115 5 is_stmt 1 view .LVU117
  115:Src/i2s.c     **** 
- 333              		.loc 1 115 5 view .LVU118
- 334 00e4 0D4B     		ldr	r3, .L15+20
- 335 00e6 6363     		str	r3, [r4, #52]
+ 334              		.loc 1 115 5 view .LVU118
+ 335 00e8 0D4B     		ldr	r3, .L15+20
+ 336 00ea 6363     		str	r3, [r4, #52]
  115:Src/i2s.c     **** 
- 336              		.loc 1 115 5 view .LVU119
- 337 00e8 5C62     		str	r4, [r3, #36]
+ 337              		.loc 1 115 5 view .LVU119
+ 338 00ec 5C62     		str	r4, [r3, #36]
  115:Src/i2s.c     **** 
- 338              		.loc 1 115 5 view .LVU120
+ 339              		.loc 1 115 5 view .LVU120
  118:Src/i2s.c     ****     HAL_NVIC_EnableIRQ(SPI2_IRQn);
- 339              		.loc 1 118 5 view .LVU121
- 340 00ea 0022     		movs	r2, #0
- 341 00ec 1146     		mov	r1, r2
- 342 00ee 2420     		movs	r0, #36
- 343 00f0 FFF7FEFF 		bl	HAL_NVIC_SetPriority
- 344              	.LVL10:
+ 340              		.loc 1 118 5 view .LVU121
+ 341 00ee 0022     		movs	r2, #0
+ 342 00f0 1146     		mov	r1, r2
+ 343 00f2 2420     		movs	r0, #36
+ 344 00f4 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+ 345              	.LVL10:
  119:Src/i2s.c     ****     /* USER CODE BEGIN SPI2_MspInit 1 */
- 345              		.loc 1 119 5 view .LVU122
- 346 00f4 2420     		movs	r0, #36
- 347 00f6 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
- 348              	.LVL11:
- 349              		.loc 1 124 1 is_stmt 0 view .LVU123
- 350 00fa 8DE7     		b	.L7
- 351              	.L13:
+ 346              		.loc 1 119 5 view .LVU122
+ 347 00f8 2420     		movs	r0, #36
+ 348 00fa FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
+ 349              	.LVL11:
+ 350              		.loc 1 124 1 is_stmt 0 view .LVU123
+ 351 00fe 8BE7     		b	.L7
+ 352              	.L13:
   96:Src/i2s.c     ****     }
- 352              		.loc 1 96 7 is_stmt 1 view .LVU124
- 353 00fc FFF7FEFF 		bl	Error_Handler
- 354              	.LVL12:
- 355 0100 D8E7     		b	.L9
- 356              	.L14:
+ 353              		.loc 1 96 7 is_stmt 1 view .LVU124
+ 354 0100 FFF7FEFF 		bl	Error_Handler
+ 355              	.LVL12:
+ 356 0104 D6E7     		b	.L9
+ 357              	.L14:
  112:Src/i2s.c     ****     }
- 357              		.loc 1 112 7 view .LVU125
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 11
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 11
 
 
- 358 0102 FFF7FEFF 		bl	Error_Handler
- 359              	.LVL13:
- 360 0106 EDE7     		b	.L10
- 361              	.L16:
- 362              		.align	2
- 363              	.L15:
- 364 0108 00380040 		.word	1073756160
- 365 010c 00040048 		.word	1207960576
- 366 0110 00080048 		.word	1207961600
- 367 0114 00000000 		.word	hdma_spi2_rx
- 368 0118 44000240 		.word	1073872964
- 369 011c 00000000 		.word	hdma_spi2_tx
- 370 0120 58000240 		.word	1073872984
- 371              		.cfi_endproc
- 372              	.LFE127:
- 374              		.section	.text.HAL_I2S_MspDeInit,"ax",%progbits
- 375              		.align	1
- 376              		.global	HAL_I2S_MspDeInit
- 377              		.syntax unified
- 378              		.thumb
- 379              		.thumb_func
- 380              		.fpu fpv4-sp-d16
- 382              	HAL_I2S_MspDeInit:
- 383              	.LVL14:
- 384              	.LFB128:
+ 358              		.loc 1 112 7 view .LVU125
+ 359 0106 FFF7FEFF 		bl	Error_Handler
+ 360              	.LVL13:
+ 361 010a EDE7     		b	.L10
+ 362              	.L16:
+ 363              		.align	2
+ 364              	.L15:
+ 365 010c 00380040 		.word	1073756160
+ 366 0110 00040048 		.word	1207960576
+ 367 0114 00080048 		.word	1207961600
+ 368 0118 00000000 		.word	hdma_spi2_rx
+ 369 011c 44000240 		.word	1073872964
+ 370 0120 00000000 		.word	hdma_spi2_tx
+ 371 0124 58000240 		.word	1073872984
+ 372              		.cfi_endproc
+ 373              	.LFE127:
+ 375              		.section	.text.HAL_I2S_MspDeInit,"ax",%progbits
+ 376              		.align	1
+ 377              		.global	HAL_I2S_MspDeInit
+ 378              		.syntax unified
+ 379              		.thumb
+ 380              		.thumb_func
+ 381              		.fpu fpv4-sp-d16
+ 383              	HAL_I2S_MspDeInit:
+ 384              	.LVL14:
+ 385              	.LFB128:
  125:Src/i2s.c     **** 
  126:Src/i2s.c     **** void HAL_I2S_MspDeInit(I2S_HandleTypeDef *i2sHandle)
  127:Src/i2s.c     **** {
- 385              		.loc 1 127 1 view -0
- 386              		.cfi_startproc
- 387              		@ args = 0, pretend = 0, frame = 0
- 388              		@ frame_needed = 0, uses_anonymous_args = 0
+ 386              		.loc 1 127 1 view -0
+ 387              		.cfi_startproc
+ 388              		@ args = 0, pretend = 0, frame = 0
+ 389              		@ frame_needed = 0, uses_anonymous_args = 0
  128:Src/i2s.c     **** 
  129:Src/i2s.c     ****   if (i2sHandle->Instance == SPI2)
- 389              		.loc 1 129 3 view .LVU127
- 390              		.loc 1 129 16 is_stmt 0 view .LVU128
- 391 0000 0268     		ldr	r2, [r0]
- 392              		.loc 1 129 6 view .LVU129
- 393 0002 0F4B     		ldr	r3, .L24
- 394 0004 9A42     		cmp	r2, r3
- 395 0006 00D0     		beq	.L23
- 396 0008 7047     		bx	lr
- 397              	.L23:
+ 390              		.loc 1 129 3 view .LVU127
+ 391              		.loc 1 129 16 is_stmt 0 view .LVU128
+ 392 0000 0268     		ldr	r2, [r0]
+ 393              		.loc 1 129 6 view .LVU129
+ 394 0002 0F4B     		ldr	r3, .L24
+ 395 0004 9A42     		cmp	r2, r3
+ 396 0006 00D0     		beq	.L23
+ 397 0008 7047     		bx	lr
+ 398              	.L23:
  127:Src/i2s.c     **** 
- 398              		.loc 1 127 1 view .LVU130
- 399 000a 10B5     		push	{r4, lr}
- 400              	.LCFI5:
- 401              		.cfi_def_cfa_offset 8
- 402              		.cfi_offset 4, -8
- 403              		.cfi_offset 14, -4
- 404 000c 0446     		mov	r4, r0
+ 399              		.loc 1 127 1 view .LVU130
+ 400 000a 10B5     		push	{r4, lr}
+ 401              	.LCFI5:
+ 402              		.cfi_def_cfa_offset 8
+ 403              		.cfi_offset 4, -8
+ 404              		.cfi_offset 14, -4
+ 405 000c 0446     		mov	r4, r0
  130:Src/i2s.c     ****   {
  131:Src/i2s.c     ****     /* USER CODE BEGIN SPI2_MspDeInit 0 */
  132:Src/i2s.c     **** 
  133:Src/i2s.c     ****     /* USER CODE END SPI2_MspDeInit 0 */
  134:Src/i2s.c     ****     /* Peripheral clock disable */
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 12
+
+
  135:Src/i2s.c     ****     __HAL_RCC_SPI2_CLK_DISABLE();
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 12
-
-
- 405              		.loc 1 135 5 is_stmt 1 view .LVU131
- 406 000e 0D4A     		ldr	r2, .L24+4
- 407 0010 D369     		ldr	r3, [r2, #28]
- 408 0012 23F48043 		bic	r3, r3, #16384
- 409 0016 D361     		str	r3, [r2, #28]
+ 406              		.loc 1 135 5 is_stmt 1 view .LVU131
+ 407 000e 0D4A     		ldr	r2, .L24+4
+ 408 0010 D369     		ldr	r3, [r2, #28]
+ 409 0012 23F48043 		bic	r3, r3, #16384
+ 410 0016 D361     		str	r3, [r2, #28]
  136:Src/i2s.c     **** 
  137:Src/i2s.c     ****     /**I2S2 GPIO Configuration
  138:Src/i2s.c     ****     PB12     ------> I2S2_WS
@@ -675,99 +676,99 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 1
  142:Src/i2s.c     ****     PC6     ------> I2S2_MCK
  143:Src/i2s.c     ****     */
  144:Src/i2s.c     ****     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15);
- 410              		.loc 1 144 5 view .LVU132
- 411 0018 4FF47041 		mov	r1, #61440
- 412 001c 0A48     		ldr	r0, .L24+8
- 413              	.LVL15:
- 414              		.loc 1 144 5 is_stmt 0 view .LVU133
- 415 001e FFF7FEFF 		bl	HAL_GPIO_DeInit
- 416              	.LVL16:
+ 411              		.loc 1 144 5 view .LVU132
+ 412 0018 4FF47041 		mov	r1, #61440
+ 413 001c 0A48     		ldr	r0, .L24+8
+ 414              	.LVL15:
+ 415              		.loc 1 144 5 is_stmt 0 view .LVU133
+ 416 001e FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 417              	.LVL16:
  145:Src/i2s.c     **** 
  146:Src/i2s.c     ****     HAL_GPIO_DeInit(GPIOC, GPIO_PIN_6);
- 417              		.loc 1 146 5 is_stmt 1 view .LVU134
- 418 0022 4021     		movs	r1, #64
- 419 0024 0948     		ldr	r0, .L24+12
- 420 0026 FFF7FEFF 		bl	HAL_GPIO_DeInit
- 421              	.LVL17:
+ 418              		.loc 1 146 5 is_stmt 1 view .LVU134
+ 419 0022 4021     		movs	r1, #64
+ 420 0024 0948     		ldr	r0, .L24+12
+ 421 0026 FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 422              	.LVL17:
  147:Src/i2s.c     **** 
  148:Src/i2s.c     ****     /* I2S2 DMA DeInit */
  149:Src/i2s.c     ****     HAL_DMA_DeInit(i2sHandle->hdmarx);
- 422              		.loc 1 149 5 view .LVU135
- 423 002a A06B     		ldr	r0, [r4, #56]
- 424 002c FFF7FEFF 		bl	HAL_DMA_DeInit
- 425              	.LVL18:
+ 423              		.loc 1 149 5 view .LVU135
+ 424 002a A06B     		ldr	r0, [r4, #56]
+ 425 002c FFF7FEFF 		bl	HAL_DMA_DeInit
+ 426              	.LVL18:
  150:Src/i2s.c     ****     HAL_DMA_DeInit(i2sHandle->hdmatx);
- 426              		.loc 1 150 5 view .LVU136
- 427 0030 606B     		ldr	r0, [r4, #52]
- 428 0032 FFF7FEFF 		bl	HAL_DMA_DeInit
- 429              	.LVL19:
+ 427              		.loc 1 150 5 view .LVU136
+ 428 0030 606B     		ldr	r0, [r4, #52]
+ 429 0032 FFF7FEFF 		bl	HAL_DMA_DeInit
+ 430              	.LVL19:
  151:Src/i2s.c     **** 
  152:Src/i2s.c     ****     /* I2S2 interrupt Deinit */
  153:Src/i2s.c     ****     HAL_NVIC_DisableIRQ(SPI2_IRQn);
- 430              		.loc 1 153 5 view .LVU137
- 431 0036 2420     		movs	r0, #36
- 432 0038 FFF7FEFF 		bl	HAL_NVIC_DisableIRQ
- 433              	.LVL20:
+ 431              		.loc 1 153 5 view .LVU137
+ 432 0036 2420     		movs	r0, #36
+ 433 0038 FFF7FEFF 		bl	HAL_NVIC_DisableIRQ
+ 434              	.LVL20:
  154:Src/i2s.c     ****     /* USER CODE BEGIN SPI2_MspDeInit 1 */
  155:Src/i2s.c     **** 
  156:Src/i2s.c     ****     /* USER CODE END SPI2_MspDeInit 1 */
  157:Src/i2s.c     ****   }
  158:Src/i2s.c     **** }
- 434              		.loc 1 158 1 is_stmt 0 view .LVU138
- 435 003c 10BD     		pop	{r4, pc}
- 436              	.LVL21:
- 437              	.L25:
- 438              		.loc 1 158 1 view .LVU139
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 13
+ 435              		.loc 1 158 1 is_stmt 0 view .LVU138
+ 436 003c 10BD     		pop	{r4, pc}
+ 437              	.LVL21:
+ 438              	.L25:
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 13
 
 
- 439 003e 00BF     		.align	2
- 440              	.L24:
- 441 0040 00380040 		.word	1073756160
- 442 0044 00100240 		.word	1073876992
- 443 0048 00040048 		.word	1207960576
- 444 004c 00080048 		.word	1207961600
- 445              		.cfi_endproc
- 446              	.LFE128:
- 448              		.comm	hdma_spi2_tx,68,4
- 449              		.comm	hdma_spi2_rx,68,4
- 450              		.comm	hi2s2,68,4
- 451              		.text
- 452              	.Letext0:
- 453              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
- 454              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
- 455              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 456              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 457              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h"
- 458              		.file 7 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
- 459              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
- 460              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\lib\\gcc\\arm-none-eabi
- 461              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include
- 462              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 463              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
- 464              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
- 465              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h"
- 466              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
- 467              		.file 16 "Inc/i2s.h"
- 468              		.file 17 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h"
- 469              		.file 18 "Inc/main.h"
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s 			page 14
+ 439              		.loc 1 158 1 view .LVU139
+ 440 003e 00BF     		.align	2
+ 441              	.L24:
+ 442 0040 00380040 		.word	1073756160
+ 443 0044 00100240 		.word	1073876992
+ 444 0048 00040048 		.word	1207960576
+ 445 004c 00080048 		.word	1207961600
+ 446              		.cfi_endproc
+ 447              	.LFE128:
+ 449              		.comm	hdma_spi2_tx,68,4
+ 450              		.comm	hdma_spi2_rx,68,4
+ 451              		.comm	hi2s2,68,4
+ 452              		.text
+ 453              	.Letext0:
+ 454              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 455              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 456              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
+ 457              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 458              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h"
+ 459              		.file 7 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 460              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 461              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\lib\\gcc\\arm-none-eabi
+ 462              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include
+ 463              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 464              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 465              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 466              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h"
+ 467              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
+ 468              		.file 16 "Inc/i2s.h"
+ 469              		.file 17 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h"
+ 470              		.file 18 "Inc/main.h"
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 i2s.c
-C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s:18     .text.MX_I2S2_Init:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s:26     .text.MX_I2S2_Init:00000000 MX_I2S2_Init
-C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s:93     .text.MX_I2S2_Init:0000003c $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s:18     .text.MX_I2S2_Init:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s:26     .text.MX_I2S2_Init:00000000 MX_I2S2_Init
+C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s:93     .text.MX_I2S2_Init:0000003c $d
                             *COM*:00000044 hi2s2
-C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s:99     .text.HAL_I2S_MspInit:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s:106    .text.HAL_I2S_MspInit:00000000 HAL_I2S_MspInit
-C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s:364    .text.HAL_I2S_MspInit:00000108 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s:99     .text.HAL_I2S_MspInit:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s:106    .text.HAL_I2S_MspInit:00000000 HAL_I2S_MspInit
+C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s:365    .text.HAL_I2S_MspInit:0000010c $d
                             *COM*:00000044 hdma_spi2_rx
                             *COM*:00000044 hdma_spi2_tx
-C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s:375    .text.HAL_I2S_MspDeInit:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s:382    .text.HAL_I2S_MspDeInit:00000000 HAL_I2S_MspDeInit
-C:\Users\SHINRA~1\AppData\Local\Temp\ccGJpKfS.s:441    .text.HAL_I2S_MspDeInit:00000040 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s:376    .text.HAL_I2S_MspDeInit:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s:383    .text.HAL_I2S_MspDeInit:00000000 HAL_I2S_MspDeInit
+C:\Users\SHINRA~1\AppData\Local\Temp\ccZ213Am.s:442    .text.HAL_I2S_MspDeInit:00000040 $d
 
 UNDEFINED SYMBOLS
 HAL_I2S_Init
