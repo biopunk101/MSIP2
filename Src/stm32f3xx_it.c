@@ -22,6 +22,7 @@
 #include "main.h"
 #include "stm32f3xx_it.h"
 #include "led.h"
+#include <string.h>
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 /* USER CODE END Includes */
@@ -74,6 +75,7 @@ uint8_t up = 0;
 uint16_t cdctick = 0;
 extern uint8_t TX_Flag;
 extern uint8_t FLAG_half, FLAG_comp;
+extern uint32_t lSample, rSample;
 /*
 extern uint8_t TransferFlag;
 extern uint32_t SignalTmp[16];
@@ -293,7 +295,15 @@ void USB_LP_CAN_RX0_IRQHandler(void)
 void TIM2_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM2_IRQn 0 */
+  if (TX_Flag)
+  {
+    if (NextBuf)
+      CDC_Transmit_FS(&ABuf, 64);
+    else
+      CDC_Transmit_FS(&BBuf, 64);
 
+    TX_Flag = 0;
+  }
   /* USER CODE END TIM2_IRQn 0 */
   HAL_TIM_IRQHandler(&htim2);
   /* USER CODE BEGIN TIM2_IRQn 1 */
@@ -306,17 +316,38 @@ void TIM2_IRQHandler(void)
  */
 void TIM3_IRQHandler(void)
 {
-  /* USER CODE BEGIN TIM3_IRQn 0 */
-  if (!skip)
-  {
+/* USER CODE BEGIN TIM3_IRQn 0 */
+#if 1
+  // if (!skip)
+  //{
 #ifdef SIMULATOR
-    SignalAvg = GenerateSignal();
+  SignalAvg = GenerateSignal();
 #else
-    // HAL_I2S_Receive_IT(&hi2s2, (uint16_t *)&SignalTmp, 3);
-#endif
+  if (!NextBuf)
+  {
+    memcpy(&ABuf[txidx * 4], &lSample, 4);
+    txidx++;
+    memcpy(&ABuf[txidx * 4], &rSample, 4);
+    txidx++;
   }
-  skip ^= 1; // half sampling
+  else
+  {
+    memcpy(&BBuf[txidx * 4], &lSample, 4);
+    txidx++;
+    memcpy(&BBuf[txidx * 4], &rSample, 4);
+    txidx++;
+  }
 
+  if (txidx >= 16)
+  {
+    NextBuf ^= 1;
+    TX_Flag = 1;
+    txidx = 0;
+  }
+#endif
+  //}
+  // skip ^= 1; // half sampling
+#endif
   /* USER CODE END TIM3_IRQn 0 */
   HAL_TIM_IRQHandler(&htim3);
   /* USER CODE BEGIN TIM3_IRQn 1 */

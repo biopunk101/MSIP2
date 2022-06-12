@@ -72,7 +72,7 @@ uint8_t TransferFlag = 0;
 // maybe use 4byte in and 3 byte out?
 uint16_t SignalTmp[32] = {0x00};
 uint8_t BufSize = 4;
-int lSample = 0, rSample = 0;
+uint32_t lSample = 0, rSample = 0;
 uint8_t FLAG_half = 0, FLAG_comp = 0;
 
 /* USER CODE END 0 */
@@ -149,20 +149,27 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+#if 0
     if (TransferFlag)
     {
       if (FLAG_half)
       {
         FLAG_half = 0;
         // add your code: data shift [0:250]...
-        CDC_Transmit_FS(&SignalTmp[0], 2 * BufSize);
+        // CDC_Transmit_FS(&SignalTmp[0], 2 * BufSize);
+        CDC_Transmit_FS(&lSample, 4);
+        CDC_Transmit_FS(&rSample, 4);
       }
       if (FLAG_comp)
       {
         FLAG_comp = 0;
-        CDC_Transmit_FS(&SignalTmp[BufSize], 2 * BufSize);
+        // CDC_Transmit_FS(&SignalTmp[BufSize], 2 * BufSize);
+        CDC_Transmit_FS(&lSample, 4);
+        CDC_Transmit_FS(&rSample, 4);
       }
     }
+#endif
   }
   /* USER CODE END 3 */
 }
@@ -217,12 +224,28 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void HAL_I2S_RxHalfCpltCallback(I2S_HandleTypeDef *hi2s)
 {
+  // lSample = (int)(SignalTmp[0] << 16) | SignalTmp[1];
+  // rSample = (int)(SignalTmp[2] << 16) | SignalTmp[3];
+  // SignalTmp[0] = 0xFF00;
+  // SignalTmp[1] = 0x2d74;
+  memcpy(&lSample, &SignalTmp[0], 4);
+  // SignalTmp[2] = 0xFF00;
+  // SignalTmp[3] = 0x8076;
+  memcpy(&rSample, &SignalTmp[2], 4);
   FLAG_half = 1; // fill buffer half
   BlinkLED(3);
 }
 
 void HAL_I2S_RxCpltCallback(I2S_HandleTypeDef *hi2s)
 {
+  // lSample = (int)(SignalTmp[4] << 16) | SignalTmp[5];
+  // rSample = (int)(SignalTmp[6] << 16) | SignalTmp[7];
+  // SignalTmp[4] = 0xFF00;
+  // SignalTmp[5] = 0x2d74;
+  memcpy(&lSample, &SignalTmp[4], 4);
+  // SignalTmp[6] = 0xFF00;
+  // SignalTmp[7] = 0x8076;
+  memcpy(&rSample, &SignalTmp[6], 4);
   FLAG_comp = 1;
   BlinkLED(4);
 }
