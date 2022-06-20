@@ -15,7 +15,7 @@
             ],
             "windowsSdkVersion": "10.0.19041.0",
             "compilerPath": "C:/mingw64/bin/gcc.exe",
-            "cStandard": "c17",
+            "cStandard": "c11",
             "cppStandard": "c++17",
             "configurationProvider": "ms-vscode.makefile-tools"
         }

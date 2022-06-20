@@ -318,35 +318,35 @@ void TIM3_IRQHandler(void)
 {
 /* USER CODE BEGIN TIM3_IRQn 0 */
 #if 1
-  // if (!skip)
-  //{
+  if (!skip)
+  {
 #ifdef SIMULATOR
-  SignalAvg = GenerateSignal();
+    SignalAvg = GenerateSignal();
 #else
-  if (!NextBuf)
-  {
-    memcpy(&ABuf[txidx * 4], &lSample, 4);
-    txidx++;
-    memcpy(&ABuf[txidx * 4], &rSample, 4);
-    txidx++;
-  }
-  else
-  {
-    memcpy(&BBuf[txidx * 4], &lSample, 4);
-    txidx++;
-    memcpy(&BBuf[txidx * 4], &rSample, 4);
-    txidx++;
-  }
+    if (!NextBuf)
+    {
+      memcpy(&ABuf[txidx * 4], &lSample, 4);
+      txidx++;
+      memcpy(&ABuf[txidx * 4], &rSample, 4);
+      txidx++;
+    }
+    else
+    {
+      memcpy(&BBuf[txidx * 4], &lSample, 4);
+      txidx++;
+      memcpy(&BBuf[txidx * 4], &rSample, 4);
+      txidx++;
+    }
 
-  if (txidx >= 16)
-  {
-    NextBuf ^= 1;
-    TX_Flag = 1;
-    txidx = 0;
-  }
+    if (txidx >= 16)
+    {
+      NextBuf ^= 1;
+      TX_Flag = 1;
+      txidx = 0;
+    }
 #endif
-  //}
-  // skip ^= 1; // half sampling
+  }
+  skip ^= 1; // half sampling
 #endif
   /* USER CODE END TIM3_IRQn 0 */
   HAL_TIM_IRQHandler(&htim3);
