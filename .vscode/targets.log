@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jul 06 17:10:27 2022
+# Make data base, printed on Thu Jul 21 00:37:03 2022
 
 # Variables
 
@@ -22,16 +22,14 @@ GNUMAKEFLAGS :=
 LDSCRIPT = STM32F303VCTx_FLASH.ld
 # makefile
 MAKEFLAGS = pqrR
-# environment
-VSCODE_LOG_NATIVE = false
 # makefile (from 'Makefile', line 16)
 TARGET = MSIP2
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
-# makefile (from 'Makefile',  
-line 126)
+# makefile (from 'Makefile', line 126)
 AS_DEFS = 
-# makefile (from 'Makefile', line 135)
+# makefile (from 'M 
+akefile', line 135)
 AS_INCLUDES = 
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
@@ -50,7 +48,7 @@ BIN = $(CP) -O binary -S
 # environment
 WINDIR = C:\WINDOWS
 # environment
-VSCODE_NLS_CONFIG = {"locale":"zh-tw","availableLanguages":{"*":"zh-tw"},"_languagePackId":"ac66bbc6dbbb1314a06c6472917732ef.zh-tw","_translationsConfigFile":"C:\\Users\\ShinraLuo\\AppData\\Roaming\\Code\\clp\\ac66bbc6dbbb1314a06c6472917732ef.zh-tw\\tcf.json","_cacheRoot":"C:\\Users\\ShinraLuo\\AppData\\Roaming\\Code\\clp\\ac66bbc6dbbb1314a06c6472917732ef.zh-tw","_resolvedLanguagePackCoreLocation":"C:\\Users\\ShinraLuo\\AppData\\Roaming\\Code\\clp\\ac66bbc6dbbb1314a06c6472917732ef.zh-tw\\30d9c6cd9483b2cc586687151bcbcd635f373630","_corruptedFile":"C:\\Users\\ShinraLuo\\AppData\\Roaming\\Code\\clp\\ac66bbc6dbbb1314a06c6472917732ef.zh-tw\\corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"zh-tw","availableLanguages":{"*":"zh-tw"},"_languagePackId":"ac66bbc6dbbb1314a06c6472917732ef.zh-tw","_translationsConfigFile":"C:\\Users\\ShinraLuo\\AppData\\Roaming\\Code\\clp\\ac66bbc6dbbb1314a06c6472917732ef.zh-tw\\tcf.json","_cacheRoot":"C:\\Users\\ShinraLuo\\AppData\\Roaming\\Code\\clp\\ac66bbc6dbbb1314a06c6472917732ef.zh-tw","_resolvedLanguagePackCoreLocation":"C:\\Users\\ShinraLuo\\AppData\\Roaming\\Code\\clp\\ac66bbc6dbbb1314a06c6472917732ef.zh-tw\\b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a","_corruptedFile":"C:\\Users\\ShinraLuo\\AppData\\Roaming\\Code\\clp\\ac66bbc6dbbb1314a06c6472917732ef.zh-tw\\corrupted.info","_languagePackSupport":true}
 # makefile (from 'Makefile', line 104)
 SZ = $(PREFIX)size
 # makefile (from 'Makefile', line 159)
@@ -67,8 +65,6 @@ CP = $(PREFIX)objcopy
 DEBUG = 1
 # environment
 TMP = C:\Users\SHINRA~1\AppData\Local\Temp
-# environment
-VSCODE_VERBOSE_LOGGING = true
 # makefile (from 'Makefile', line 102)
 AS = $(PREFIX)gcc -x assembler-with-cpp
 # environment
@@ -76,13 +72,11 @@ PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-4752208b-bc75-4029-8b96-6cf47d9f1fbc-sock
-# environment
 VSCODE_CWD = C:\Users\ShinraLuo\AppData\Local\Programs\Microsoft VS Code
 # default
 MAKE_HOST := x86_64-w64-mingw32
 # environment
-PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\WINDOWS\system32\wbem;C:\Program Files (x86)\IVT Corporation\BlueSoleil\Mobile;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\Program Files\TortoiseGit\bin;C:\Users\ShinraLuo\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\ShinraLuo\AppData\Local\Programs\Python\Python39\;C:\Users\ShinraLuo\AppData\Local\Microsoft\WindowsApps;C:\Users\ShinraLuo\AppData\Local\Programs\Microsoft VS Code\bin;C:\mingw64\bin;C:\OpenOCD-0.11.0\bin;C:\Program Files (x86)\GNU Tools Arm Embedded\9 2019-q4-major\bin;
+PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\WINDOWS\system32\wbem;C:\Program Files (x86)\IVT Corporation\BlueSoleil\Mobile;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\Program Files\TortoiseGit\bin;C:\Users\ShinraLuo\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\ShinraLuo\AppData\Local\Programs\Python\Python39\;C:\Users\ShinraLuo\AppData\Local\Microsoft\WindowsApps;C:\Users\ShinraLuo\AppData\Local\Programs\Microsoft VS Code\bin;C:\mingw64\bin;C:\OpenOCD-0.11.0\bin;C:\Program Files (x86)\GNU Tools Arm Embedded\9 2019-q4-major\bin;
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
@@ -94,8 +88,6 @@ USERPROFILE = C:\Users\ShinraLuo
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
-VSCODE_LOG_STACK = false
-# environment
 NUMBER_OF_PROCESSORS = 8
 # environment
 ELECTRON_RUN_AS_NODE = 1
@@ -106,13 +98,11 @@ LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BU
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_21212_UCJTYSILUTKTEHUQ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_30000_GZDKGMEFQAPZPGVW
 # makefile (from 'Makefile', line 85)
 ASM_SOURCES = startup_stm32f303xc.s
 # makefile (from 'Makefile', line 25)
 OPT = -Og
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 COMPUTERNAME = HCMEDSHINRALUO
 # environment
@@ -130,7 +120,7 @@ PUBLIC = C:\Users\Public
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\ShinraLuo\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = C:\Users\ShinraLuo\AppData\Roaming\Code\CachedData\b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
@@ -196,7 +186,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
 # environment
 OS = Windows_NT
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\abfe5c234c9c384971fefae810b5c50d-1.68.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\abfe5c234c9c384971fefae810b5c50d-1.69.1-main-sock
 # environment
 HOMEPATH = \Users\ShinraLuo
 # environment
@@ -248,11 +238,11 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 21212
+VSCODE_PID = 30000
 # environment
 USERDOMAIN_ROAMINGPROFILE = HCMEDSHINRALUO
 # variable set hash-table stats:
-# Load=120/1024=12%, Rehash=0, Collisions=18/266=7%
+# Load=115/1024=11%, Rehash=0, Collisions=17/267=6%
 
 # Pattern-specific Variable Values
 
@@ -264,7 +254,7 @@ USERDOMAIN_ROAMINGPROFILE = HCMEDSHINRALUO
 # . (key c:/Workbench/MSIP2, mtime 1654880141): 15 files, no impossibilities.
 # Src (key c:/Workbench/MSIP2/Src, mtime 1657039330): 21 files, no impossibilities.
 # Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src (key c:/Workbench/MSIP2/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src, mtime 1653150912): 4 files, no impossibilities.
-# build (key c:/Workbench/MSIP2/build, mtime 1657040829): 157 files, no impossibilities.
+# build (key c:/Workbench/MSIP2/build, mtime 1658030770): 157 files, no impossibilities.
 # Drivers/STM32F3xx_HAL_Driver/Src (key c:/Workbench/MSIP2/Drivers/STM32F3xx_HAL_Driver/Src, mtime 1653150912): 73 files, no impossibilities.
 
 # 276 files, no impossibilities in 6 directories.
@@ -324,7 +314,7 @@ build/led.d:
 
 build/MSIP2.elf: build/main.o build/gpio.o build/dma.o build/i2c.o build/i2s.o build/spi.o build/tim.o build/usart.o build/usb_device.o build/usbd_conf.o build/usbd_desc.o build/usbd_cdc_if.o build/stm32f3xx_it.o build/stm32f3xx_hal_msp.o build/lcd.o build/led.o build/buzzer.o build/stm32f3xx_hal_pcd.o build/stm32f3xx_hal_pcd_ex.o build/stm32f3xx_hal_i2c.o build/stm32f3xx_hal_i2c_ex.o build/stm32f3xx_hal_i2s.o build/stm32f3xx_hal_i2s_ex.o build/stm32f3xx_hal_spi.o build/stm32f3xx_hal_spi_ex.o build/stm32f3xx_hal_tim.o build/stm32f3xx_hal_tim_ex.o build/stm32f3xx_hal_uart.o build/stm32f3xx_hal_uart_ex.o build/stm32f3xx_hal.o build/stm32f3xx_hal_rcc.o build/stm32f3xx_hal_rcc_ex.o build/stm32f3xx_hal_gpio.o build/stm32f3xx_hal_dma.o build/stm32f3xx_hal_cortex.o build/stm32f3xx_hal_pwr.o build/stm32f3xx_hal_pwr_ex.o build/stm32f3xx_hal_flash.o build/stm32f3xx_hal_flash_ex.o build/system_stm32f3xx.o build/usbd_core.o build/usbd_ctlreq.o build/usbd_ioreq.o build/usbd_cdc.o build/startup_stm32f303xc.o Makefile
 #  Implicit rule search has not been done.
-#  Last modified 2022-07-06 01:07:09
+#  Last modified 2022-07-10 10:40:25
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 194):
@@ -358,7 +348,7 @@ build/stm32f3xx_hal_cortex.o: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cor
 # Not a target:
 build/stm32f3xx_it.d:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-06 00:33:41
+#  Last modified 2022-07-10 10:40:24
 #  File has been updated.
 #  Successfully updated.
 
@@ -376,7 +366,8 @@ build/usbd_conf.d:
 #  File has been updated.
 #  Successfully updated.
 
-build/stm32f3xx_hal_spi.o: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c Makefile Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h Inc/stm32f3xx_hal_conf.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h Drivers/CMSIS/Include/core_cmSimd.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h | build
+build/stm32f3xx_hal_spi.o: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c Makefile Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h Inc/stm32f3xx_hal_conf.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h Drivers/ST 
+M32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h Drivers/CMSIS/Include/core_cmSimd.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h | build
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'stm32f3xx_hal_spi'
 #  Last modified 2022-07-06 00:33:53
@@ -419,7 +410,7 @@ Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h:
 build/tim.o: Src/tim.c Makefile Src/tim.c Inc/tim.h Inc/main.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h Inc/stm32f3xx_hal_conf.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h Drivers/CMSIS/Include/core_cmSimd.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h | build
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'tim'
-#  Last modified 2022-07-06 00:33:39
+#  Last modified 2022-07-10 10:40:23
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 188):
@@ -450,7 +441,9 @@ all: build/MSIP2.elf build/MSIP2.hex build/MSIP2.bin
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
 
 Drivers/CMSIS/Include/cmsis_gcc.h:
 #  Implicit rule search has been done.
@@ -472,8 +465,7 @@ Src/buzzer.c:
 #  File has been updated.
 #  Successfully updated.
 
-build/usart.o: Src/usart.c Makefile Src/usart.c Inc/usart.h Inc/main.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h Inc/stm32f3xx_hal_conf.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h Drivers/CMSIS/Include/core_cmSimd.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h Drivers/STM32F3xx_HAL_Driv 
-er/Inc/stm32f3xx_hal_dma.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h | build
+build/usart.o: Src/usart.c Makefile Src/usart.c Inc/usart.h Inc/main.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h Inc/stm32f3xx_hal_conf.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h Drivers/CMSIS/Include/core_cmSimd.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h | build
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'usart'
 #  Last modified 2022-07-06 00:33:40
@@ -724,7 +716,8 @@ build/dma.o: Src/dma.c Makefile Src/dma.c Inc/dma.h Inc/main.h Drivers/STM32F3xx
 #  Last modified 2022-07-06 00:33:38
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 188):
+#  recipe to execute (from 'Makefile', lin 
+e 188):
 	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
 
 build/led.o: Src/led.c Makefile Src/led.c Inc/led.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h Inc/stm32f3xx_hal_conf.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h Drivers/CMSIS/Include/core_cmSimd.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h Inc/main.h | build
@@ -769,7 +762,7 @@ build/usbd_conf.o: Src/usbd_conf.c Makefile Src/usbd_conf.c Drivers/CMSIS/Device
 
 build:
 #  Implicit rule search has not been done.
-#  Last modified 2022-07-06 01:07:09
+#  Last modified 2022-07-17 12:06:10
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 204):
@@ -797,7 +790,7 @@ Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd.c:
 # Not a target:
 build/i2s.d:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-06 01:07:08
+#  Last modified 2022-07-07 00:06:05
 #  File has been updated.
 #  Successfully updated.
 
@@ -827,7 +820,7 @@ build/i2c.d:
 build/stm32f3xx_it.o: Src/stm32f3xx_it.c Makefile Src/stm32f3xx_it.c Inc/main.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h Inc/stm32f3xx_hal_conf.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h Drivers/CMSIS/Include/core_cmSimd.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h Inc/stm32f3xx_it.h Inc/led.h Inc/main.h | build
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'stm32f3xx_it'
-#  Last modified 2022-07-06 00:33:41
+#  Last modified 2022-07-10 10:40:24
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 188):
@@ -843,7 +836,7 @@ build/stm32f3xx_hal_tim.d:
 # Not a target:
 Src/tim.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-21 00:56:31
+#  Last modified 2022-07-10 10:39:46
 #  File has been updated.
 #  Successfully updated.
 
@@ -897,7 +890,8 @@ Inc/main.h:
 Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h:
 #  Implicit rule search has been done.
 #  Last modified 2021-10-12 16:00:51
-#  File has been updated.
+#  File has been  
+updated.
 #  Successfully updated.
 
 Inc/gpio.h:
@@ -907,8 +901,7 @@ Inc/gpio.h:
 #  Successfully updated.
 
 # Not a target:
-Src/usa 
-rt.c:
+Src/usart.c:
 #  Implicit rule search has been done.
 #  Last modified 2022-05-21 00:56:31
 #  File has been updated.
@@ -1289,14 +1282,15 @@ Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h:
 # Not a target:
 Src/stm32f3xx_it.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-18 22:47:51
+#  Last modified 2022-07-10 10:40:19
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c:
 #  Implicit rule search has been done.
-#  Last modified 2021-10-12 16:00:51
+#  Las 
+t modified 2021-10-12 16:00:51
 #  File has been updated.
 #  Successfully updated.
 
@@ -1312,7 +1306,7 @@ build/stm32f3xx_hal_pcd.o: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd.c 
 build/i2s.o: Src/i2s.c Makefile Src/i2s.c Inc/i2s.h Inc/main.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h Inc/stm32f3xx_hal_conf.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h Drivers/CMSIS/Include/core_cmSimd.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h | build
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'i2s'
-#  Last modified 2022-07-06 01:07:08
+#  Last modified 2022-07-07 00:06:05
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 188):
@@ -1431,8 +1425,7 @@ build/stm32f3xx_hal_flash_ex.d:
 
 Inc/i2c.h:
 #  Implicit rule search has been done.
-#  Last modified 
- 2022-05-21 00:56:29
+#  Last modified 2022-05-21 00:56:29
 #  File has been updated.
 #  Successfully updated.
 
@@ -1448,7 +1441,7 @@ build/usbd_cdc.o: Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc
 # Not a target:
 build/tim.d:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-06 00:33:39
+#  Last modified 2022-07-10 10:40:23
 #  File has been updated.
 #  Successfully updated.
 
@@ -1532,9 +1525,27 @@ Inc/lcd.h:
 build/MSIP2.hex: build/MSIP2.elf | build
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'MSIP2'
-#  Last modified 2022-07-06 01:07:09
+#  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := build/MSIP2.hex
+# automatic
+# % := 
+# automatic
+# * := MSIP2
+# automatic
+# + := build/MSIP2.elf
+# automatic
+# | := build
+# automatic
+# < := build/MSIP2.elf
+# automatic
+# ^ := build/MSIP2.elf
+# automatic
+# ? := build/MSIP2.elf
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/16=6%
 #  recipe to execute (from 'Makefile', line 198):
 	$(HEX) $< $@
 	
@@ -1548,7 +1559,8 @@ build/usbd_cdc_if.o: Src/usbd_cdc_if.c Makefile Src/usbd_cdc_if.c Inc/usbd_cdc_i
 #  recipe to execute (from 'Makefile', line 188):
 	$(CC) -c $(CFLAGS) -Wa,-a,-ad,-alms=$(BUILD_DIR)/$(notdir $(<:.c=.lst)) $< -o $@
 
-build/stm32f3xx_hal_i2s_ex.o: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2s_ex.c Makefile Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2s_ex.c Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h Inc/stm32f3xx_hal_conf.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h Drivers/CMSIS/Include/core_cmSimd.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h | build
+build/stm32f3xx_hal_i2s_ex.o: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2s_ex.c Makefile Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2s_ex.c Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h Inc/stm32f3xx_hal_conf.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h Drivers/CMSIS/Include/core_cmSimd.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h Drivers/STM32 
+F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h | build
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'stm32f3xx_hal_i2s_ex'
 #  Last modified 2022-07-06 00:33:50
@@ -1645,15 +1657,11 @@ Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c:
 #  File has been updated.
 #  Successfully updated.
 
-build/MSIP2.bin: build/MSIP2.elf | build
-#  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'MSIP2'
-#  Last modified 2022-07-06 01:07:09
-#  File has been updated.
-#  Successfully updated.
-#  recipe to execute (from 'Makefile', line 201):
-	$(BIN) $< $@	
-	
+# Not a target:
+build/MSIP2.bin:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 build/stm32f3xx_hal_pcd_ex.o: Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd_ex.c Makefile Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pcd_ex.c Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h Inc/stm32f3xx_hal_conf.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h Drivers/CMSIS/Include/core_cm4.h Drivers/CMSIS/Include/core_cmInstr.h Drivers/CMSIS/Include/cmsis_gcc.h Drivers/CMSIS/Include/core_cmFunc.h Drivers/CMSIS/Include/core_cmSimd.h Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_cortex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h | build
 #  Implicit rule search has been done.
@@ -1698,7 +1706,7 @@ Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h:
 # Not a target:
 Src/i2s.c:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-06 01:07:03
+#  Last modified 2022-07-07 00:06:00
 #  File has been updated.
 #  Successfully updated.
 
@@ -1726,7 +1734,7 @@ build/startup_stm32f303xc.d:
 #  Successfully updated.
 
 # files hash-table stats:
-# Load=199/1024=19%, Rehash=0, Collisions=542/4371=12%
+# Load=199/1024=19%, Rehash=0, Collisions=542/4366=12%
 # VPATH Search Paths
 
 vpath %.c Drivers/STM32F3xx_HAL_Driver/Src;Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src;Middlewares/ST/STM32_USB_Device_Library/Core/Src;Src
@@ -1735,14 +1743,14 @@ vpath %.c Drivers/STM32F3xx_HAL_Driver/Src;Middlewares/ST/STM32_USB_Device_Libra
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 2 (1) / strings = 518 / storage = 11516 B / avg = 22 B
-# current buf: size = 8162 B / used = 3362 B / count = 171 / avg = 19 B
-# other used: total = 8154 B / count = 347 / avg = 23 B
+# strcache buffers: 2 (1) / strings = 518 / storage = 11533 B / avg = 22 B
+# current buf: size = 8162 B / used = 3379 B / count = 172 / avg = 19 B
+# other used: total = 8154 B / count = 346 / avg = 23 B
 # other free: total = 8 B / max = 8 B / min = 8 B / avg = 8 B
 
-# strcache performance: lookups = 5826 / hit rate = 91%
+# strcache performance: lookups = 5821 / hit rate = 91%
 # hash-table stats:
-# Load=518/8192=6%, Rehash=0, Collisions=837/5826=14%
-# Finished Make data base on Wed Jul 06 17:10:27 2022
+# Load=518/8192=6%, Rehash=0, Collisions=837/5821=14%
+# Finished Make data base on Thu Jul 21 00:37:03 2022
 
  

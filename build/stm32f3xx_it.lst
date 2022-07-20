@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
   28:Src/stm32f3xx_it.c **** /* USER CODE END Includes */
   29:Src/stm32f3xx_it.c **** 
   30:Src/stm32f3xx_it.c **** /* Private typedef -----------------------------------------------------------*/
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 2
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 2
 
 
   31:Src/stm32f3xx_it.c **** /* USER CODE BEGIN TD */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
   85:Src/stm32f3xx_it.c **** 
   86:Src/stm32f3xx_it.c **** /* External variables --------------------------------------------------------*/
   87:Src/stm32f3xx_it.c **** extern PCD_HandleTypeDef hpcd_USB_FS;
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 3
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 3
 
 
   88:Src/stm32f3xx_it.c **** extern DMA_HandleTypeDef hdma_spi2_rx;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
   53              		@ frame_needed = 0, uses_anonymous_args = 0
   54              		@ link register save eliminated.
   55              	.L3:
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 4
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 4
 
 
  120:Src/stm32f3xx_it.c ****   /* USER CODE BEGIN HardFault_IRQn 0 */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
   88              		.align	1
   89              		.global	BusFault_Handler
   90              		.syntax unified
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 5
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 5
 
 
   91              		.thumb
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
  125              		@ frame_needed = 0, uses_anonymous_args = 0
  126              		@ link register save eliminated.
  127              	.L9:
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 6
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 6
 
 
  165:Src/stm32f3xx_it.c ****   /* USER CODE BEGIN UsageFault_IRQn 0 */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
  163              	DebugMon_Handler:
  164              	.LFB132:
  187:Src/stm32f3xx_it.c **** 
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 7
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 7
 
 
  188:Src/stm32f3xx_it.c **** /**
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
  197              		.global	SysTick_Handler
  198              		.syntax unified
  199              		.thumb
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 8
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 8
 
 
  200              		.thumb_func
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
  238:Src/stm32f3xx_it.c **** void DMA1_Channel4_IRQHandler(void)
  239:Src/stm32f3xx_it.c **** {
  232              		.loc 1 239 1 is_stmt 1 view -0
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 9
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 9
 
 
  233              		.cfi_startproc
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
  256:Src/stm32f3xx_it.c ****   /* USER CODE END DMA1_Channel5_IRQn 0 */
  257:Src/stm32f3xx_it.c ****   HAL_DMA_IRQHandler(&hdma_spi2_tx);
  273              		.loc 1 257 3 view .LVU31
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 10
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 10
 
 
  274 0002 0248     		ldr	r0, .L21
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
  312 000a 00BF     		.align	2
  313              	.L25:
  314 000c 00000000 		.word	hpcd_USB_FS
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 11
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 11
 
 
  315              		.cfi_endproc
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
  359              	.LFB139:
  290:Src/stm32f3xx_it.c **** 
  291:Src/stm32f3xx_it.c **** /**
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 12
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 12
 
 
  292:Src/stm32f3xx_it.c ****  * @brief
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
  397 001e FFF7FEFF 		bl	HAL_TIM_IRQHandler
  398              	.LVL6:
  309:Src/stm32f3xx_it.c ****   /* USER CODE BEGIN TIM2_IRQn 1 */
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 13
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 13
 
 
  310:Src/stm32f3xx_it.c **** 
@@ -765,243 +765,229 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
  432              		.cfi_startproc
  433              		@ args = 0, pretend = 0, frame = 0
  434              		@ frame_needed = 0, uses_anonymous_args = 0
- 435 0000 38B5     		push	{r3, r4, r5, lr}
+ 435 0000 10B5     		push	{r4, lr}
  436              	.LCFI6:
- 437              		.cfi_def_cfa_offset 16
- 438              		.cfi_offset 3, -16
- 439              		.cfi_offset 4, -12
- 440              		.cfi_offset 5, -8
- 441              		.cfi_offset 14, -4
+ 437              		.cfi_def_cfa_offset 8
+ 438              		.cfi_offset 4, -8
+ 439              		.cfi_offset 14, -4
  319:Src/stm32f3xx_it.c **** /* USER CODE BEGIN TIM3_IRQn 0 */
  320:Src/stm32f3xx_it.c **** #if 1
- 321:Src/stm32f3xx_it.c ****   if (!skip)
- 442              		.loc 1 321 3 view .LVU53
- 443              		.loc 1 321 7 is_stmt 0 view .LVU54
- 444 0002 1D4B     		ldr	r3, .L43
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 14
-
-
- 445 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 446              		.loc 1 321 6 view .LVU55
- 447 0006 FBB9     		cbnz	r3, .L39
- 322:Src/stm32f3xx_it.c ****   {
+ 321:Src/stm32f3xx_it.c ****   // if (!skip)
+ 322:Src/stm32f3xx_it.c ****   //{
  323:Src/stm32f3xx_it.c **** #ifdef SIMULATOR
- 324:Src/stm32f3xx_it.c ****     SignalAvg = GenerateSignal();
+ 324:Src/stm32f3xx_it.c ****   SignalAvg = GenerateSignal();
  325:Src/stm32f3xx_it.c **** #else
- 326:Src/stm32f3xx_it.c ****     if (!NextBuf)
- 448              		.loc 1 326 5 is_stmt 1 view .LVU56
- 449              		.loc 1 326 9 is_stmt 0 view .LVU57
- 450 0008 1C4A     		ldr	r2, .L43+4
- 451 000a 1178     		ldrb	r1, [r2]	@ zero_extendqisi2
- 452              		.loc 1 326 8 view .LVU58
- 453 000c 21BB     		cbnz	r1, .L40
- 327:Src/stm32f3xx_it.c ****     {
- 328:Src/stm32f3xx_it.c ****       memcpy(&ABuf[txidx * 4], &lSample, 4);
- 454              		.loc 1 328 7 is_stmt 1 view .LVU59
- 455              		.loc 1 328 26 is_stmt 0 view .LVU60
- 456 000e 1C48     		ldr	r0, .L43+8
- 457 0010 0278     		ldrb	r2, [r0]	@ zero_extendqisi2
- 458              		.loc 1 328 14 view .LVU61
- 459 0012 1C4C     		ldr	r4, .L43+12
- 460 0014 1C4D     		ldr	r5, .L43+16
- 461 0016 2D68     		ldr	r5, [r5]
- 462              		.loc 1 328 7 view .LVU62
- 463 0018 44F82250 		str	r5, [r4, r2, lsl #2]	@ unaligned
- 329:Src/stm32f3xx_it.c ****       txidx++;
- 464              		.loc 1 329 7 is_stmt 1 view .LVU63
- 465              		.loc 1 329 12 is_stmt 0 view .LVU64
- 466 001c 0132     		adds	r2, r2, #1
- 467 001e D2B2     		uxtb	r2, r2
- 330:Src/stm32f3xx_it.c ****       memcpy(&ABuf[txidx * 4], &rSample, 4);
- 468              		.loc 1 330 7 is_stmt 1 view .LVU65
- 469 0020 1A4D     		ldr	r5, .L43+20
- 470 0022 2D68     		ldr	r5, [r5]
- 471 0024 44F82250 		str	r5, [r4, r2, lsl #2]	@ unaligned
- 331:Src/stm32f3xx_it.c ****       txidx++;
- 472              		.loc 1 331 7 view .LVU66
- 473              		.loc 1 331 12 is_stmt 0 view .LVU67
- 474 0028 0132     		adds	r2, r2, #1
- 475 002a 0270     		strb	r2, [r0]
- 476              	.L41:
- 332:Src/stm32f3xx_it.c ****     }
- 333:Src/stm32f3xx_it.c ****     else
- 334:Src/stm32f3xx_it.c ****     {
- 335:Src/stm32f3xx_it.c ****       memcpy(&BBuf[txidx * 4], &lSample, 4);
- 336:Src/stm32f3xx_it.c ****       txidx++;
- 337:Src/stm32f3xx_it.c ****       memcpy(&BBuf[txidx * 4], &rSample, 4);
- 338:Src/stm32f3xx_it.c ****       txidx++;
- 339:Src/stm32f3xx_it.c ****     }
+ 326:Src/stm32f3xx_it.c ****   if (!NextBuf)
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 14
+
+
+ 440              		.loc 1 326 3 view .LVU53
+ 441              		.loc 1 326 7 is_stmt 0 view .LVU54
+ 442 0002 1A4B     		ldr	r3, .L43
+ 443 0004 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 444              		.loc 1 326 6 view .LVU55
+ 445 0006 02BB     		cbnz	r2, .L39
+ 327:Src/stm32f3xx_it.c ****   {
+ 328:Src/stm32f3xx_it.c ****     memcpy(&ABuf[txidx * 4], &lSample, 4);
+ 446              		.loc 1 328 5 is_stmt 1 view .LVU56
+ 447              		.loc 1 328 24 is_stmt 0 view .LVU57
+ 448 0008 1949     		ldr	r1, .L43+4
+ 449 000a 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ 450              		.loc 1 328 12 view .LVU58
+ 451 000c 1948     		ldr	r0, .L43+8
+ 452 000e 1A4C     		ldr	r4, .L43+12
+ 453 0010 2468     		ldr	r4, [r4]
+ 454              		.loc 1 328 5 view .LVU59
+ 455 0012 40F82340 		str	r4, [r0, r3, lsl #2]	@ unaligned
+ 329:Src/stm32f3xx_it.c ****     txidx++;
+ 456              		.loc 1 329 5 is_stmt 1 view .LVU60
+ 457              		.loc 1 329 10 is_stmt 0 view .LVU61
+ 458 0016 0133     		adds	r3, r3, #1
+ 459 0018 DBB2     		uxtb	r3, r3
+ 330:Src/stm32f3xx_it.c ****     memcpy(&ABuf[txidx * 4], &rSample, 4);
+ 460              		.loc 1 330 5 is_stmt 1 view .LVU62
+ 461 001a 184C     		ldr	r4, .L43+16
+ 462 001c 2468     		ldr	r4, [r4]
+ 463 001e 40F82340 		str	r4, [r0, r3, lsl #2]	@ unaligned
+ 331:Src/stm32f3xx_it.c ****     txidx++;
+ 464              		.loc 1 331 5 view .LVU63
+ 465              		.loc 1 331 10 is_stmt 0 view .LVU64
+ 466 0022 0133     		adds	r3, r3, #1
+ 467 0024 0B70     		strb	r3, [r1]
+ 468              	.L40:
+ 332:Src/stm32f3xx_it.c ****   }
+ 333:Src/stm32f3xx_it.c ****   else
+ 334:Src/stm32f3xx_it.c ****   {
+ 335:Src/stm32f3xx_it.c ****     memcpy(&BBuf[txidx * 4], &lSample, 4);
+ 336:Src/stm32f3xx_it.c ****     txidx++;
+ 337:Src/stm32f3xx_it.c ****     memcpy(&BBuf[txidx * 4], &rSample, 4);
+ 338:Src/stm32f3xx_it.c ****     txidx++;
+ 339:Src/stm32f3xx_it.c ****   }
  340:Src/stm32f3xx_it.c **** 
- 341:Src/stm32f3xx_it.c ****     if (txidx >= 16)
- 477              		.loc 1 341 5 is_stmt 1 view .LVU68
- 478              		.loc 1 341 15 is_stmt 0 view .LVU69
- 479 002c 144A     		ldr	r2, .L43+8
- 480 002e 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
- 481              		.loc 1 341 8 view .LVU70
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 15
+ 341:Src/stm32f3xx_it.c ****   if (txidx >= 16)
+ 469              		.loc 1 341 3 is_stmt 1 view .LVU65
+ 470              		.loc 1 341 13 is_stmt 0 view .LVU66
+ 471 0026 124B     		ldr	r3, .L43+4
+ 472 0028 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 473              		.loc 1 341 6 view .LVU67
+ 474 002a 0F2B     		cmp	r3, #15
+ 475 002c 09D9     		bls	.L41
+ 342:Src/stm32f3xx_it.c ****   {
+ 343:Src/stm32f3xx_it.c ****     NextBuf ^= 1;
+ 476              		.loc 1 343 5 is_stmt 1 view .LVU68
+ 477              		.loc 1 343 13 is_stmt 0 view .LVU69
+ 478 002e 82F00102 		eor	r2, r2, #1
+ 479 0032 0E4B     		ldr	r3, .L43
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 15
 
 
- 482 0030 0F2A     		cmp	r2, #15
- 483 0032 09D9     		bls	.L39
- 342:Src/stm32f3xx_it.c ****     {
- 343:Src/stm32f3xx_it.c ****       NextBuf ^= 1;
- 484              		.loc 1 343 7 is_stmt 1 view .LVU71
- 485              		.loc 1 343 15 is_stmt 0 view .LVU72
- 486 0034 81F00101 		eor	r1, r1, #1
- 487 0038 104A     		ldr	r2, .L43+4
- 488 003a 1170     		strb	r1, [r2]
- 344:Src/stm32f3xx_it.c ****       TX_Flag = 1;
- 489              		.loc 1 344 7 is_stmt 1 view .LVU73
- 490              		.loc 1 344 15 is_stmt 0 view .LVU74
- 491 003c 144A     		ldr	r2, .L43+24
- 492 003e 0121     		movs	r1, #1
- 493 0040 1170     		strb	r1, [r2]
- 345:Src/stm32f3xx_it.c ****       txidx = 0;
- 494              		.loc 1 345 7 is_stmt 1 view .LVU75
- 495              		.loc 1 345 13 is_stmt 0 view .LVU76
- 496 0042 0F4A     		ldr	r2, .L43+8
- 497 0044 0021     		movs	r1, #0
- 498 0046 1170     		strb	r1, [r2]
- 499              	.L39:
- 346:Src/stm32f3xx_it.c ****     }
+ 480 0034 1A70     		strb	r2, [r3]
+ 344:Src/stm32f3xx_it.c ****     TX_Flag = 1;
+ 481              		.loc 1 344 5 is_stmt 1 view .LVU70
+ 482              		.loc 1 344 13 is_stmt 0 view .LVU71
+ 483 0036 124B     		ldr	r3, .L43+20
+ 484 0038 0122     		movs	r2, #1
+ 485 003a 1A70     		strb	r2, [r3]
+ 345:Src/stm32f3xx_it.c ****     txidx = 0;
+ 486              		.loc 1 345 5 is_stmt 1 view .LVU72
+ 487              		.loc 1 345 11 is_stmt 0 view .LVU73
+ 488 003c 0C4B     		ldr	r3, .L43+4
+ 489 003e 0022     		movs	r2, #0
+ 490 0040 1A70     		strb	r2, [r3]
+ 491              	.L41:
+ 346:Src/stm32f3xx_it.c ****   }
  347:Src/stm32f3xx_it.c **** #endif
- 348:Src/stm32f3xx_it.c ****   }
- 349:Src/stm32f3xx_it.c ****   skip ^= 1; // half sampling
- 500              		.loc 1 349 3 is_stmt 1 view .LVU77
- 501              		.loc 1 349 8 is_stmt 0 view .LVU78
- 502 0048 83F00103 		eor	r3, r3, #1
- 503 004c 0A4A     		ldr	r2, .L43
- 504 004e 1370     		strb	r3, [r2]
+ 348:Src/stm32f3xx_it.c ****   //}
+ 349:Src/stm32f3xx_it.c ****   // skip ^= 1; // half sampling
  350:Src/stm32f3xx_it.c **** #endif
  351:Src/stm32f3xx_it.c ****   /* USER CODE END TIM3_IRQn 0 */
  352:Src/stm32f3xx_it.c ****   HAL_TIM_IRQHandler(&htim3);
- 505              		.loc 1 352 3 is_stmt 1 view .LVU79
- 506 0050 1048     		ldr	r0, .L43+28
- 507 0052 FFF7FEFF 		bl	HAL_TIM_IRQHandler
- 508              	.LVL8:
+ 492              		.loc 1 352 3 is_stmt 1 view .LVU74
+ 493 0042 1048     		ldr	r0, .L43+24
+ 494 0044 FFF7FEFF 		bl	HAL_TIM_IRQHandler
+ 495              	.LVL8:
  353:Src/stm32f3xx_it.c ****   /* USER CODE BEGIN TIM3_IRQn 1 */
  354:Src/stm32f3xx_it.c **** 
  355:Src/stm32f3xx_it.c ****   /* USER CODE END TIM3_IRQn 1 */
  356:Src/stm32f3xx_it.c **** }
- 509              		.loc 1 356 1 is_stmt 0 view .LVU80
- 510 0056 38BD     		pop	{r3, r4, r5, pc}
- 511              	.L40:
- 335:Src/stm32f3xx_it.c ****       txidx++;
- 512              		.loc 1 335 7 is_stmt 1 view .LVU81
- 335:Src/stm32f3xx_it.c ****       txidx++;
- 513              		.loc 1 335 26 is_stmt 0 view .LVU82
- 514 0058 0948     		ldr	r0, .L43+8
- 515 005a 0278     		ldrb	r2, [r0]	@ zero_extendqisi2
- 335:Src/stm32f3xx_it.c ****       txidx++;
- 516              		.loc 1 335 14 view .LVU83
- 517 005c 0E4C     		ldr	r4, .L43+32
- 518 005e 0A4D     		ldr	r5, .L43+16
- 519 0060 2D68     		ldr	r5, [r5]
- 335:Src/stm32f3xx_it.c ****       txidx++;
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 16
+ 496              		.loc 1 356 1 is_stmt 0 view .LVU75
+ 497 0048 10BD     		pop	{r4, pc}
+ 498              	.L39:
+ 335:Src/stm32f3xx_it.c ****     txidx++;
+ 499              		.loc 1 335 5 is_stmt 1 view .LVU76
+ 335:Src/stm32f3xx_it.c ****     txidx++;
+ 500              		.loc 1 335 24 is_stmt 0 view .LVU77
+ 501 004a 0949     		ldr	r1, .L43+4
+ 502 004c 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ 335:Src/stm32f3xx_it.c ****     txidx++;
+ 503              		.loc 1 335 12 view .LVU78
+ 504 004e 0E48     		ldr	r0, .L43+28
+ 505 0050 094C     		ldr	r4, .L43+12
+ 506 0052 2468     		ldr	r4, [r4]
+ 335:Src/stm32f3xx_it.c ****     txidx++;
+ 507              		.loc 1 335 5 view .LVU79
+ 508 0054 40F82340 		str	r4, [r0, r3, lsl #2]	@ unaligned
+ 336:Src/stm32f3xx_it.c ****     memcpy(&BBuf[txidx * 4], &rSample, 4);
+ 509              		.loc 1 336 5 is_stmt 1 view .LVU80
+ 336:Src/stm32f3xx_it.c ****     memcpy(&BBuf[txidx * 4], &rSample, 4);
+ 510              		.loc 1 336 10 is_stmt 0 view .LVU81
+ 511 0058 0133     		adds	r3, r3, #1
+ 512 005a DBB2     		uxtb	r3, r3
+ 337:Src/stm32f3xx_it.c ****     txidx++;
+ 513              		.loc 1 337 5 is_stmt 1 view .LVU82
+ 514 005c 074C     		ldr	r4, .L43+16
+ 515 005e 2468     		ldr	r4, [r4]
+ 516 0060 40F82340 		str	r4, [r0, r3, lsl #2]	@ unaligned
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 16
 
 
- 520              		.loc 1 335 7 view .LVU84
- 521 0062 44F82250 		str	r5, [r4, r2, lsl #2]	@ unaligned
- 336:Src/stm32f3xx_it.c ****       memcpy(&BBuf[txidx * 4], &rSample, 4);
- 522              		.loc 1 336 7 is_stmt 1 view .LVU85
- 336:Src/stm32f3xx_it.c ****       memcpy(&BBuf[txidx * 4], &rSample, 4);
- 523              		.loc 1 336 12 is_stmt 0 view .LVU86
- 524 0066 0132     		adds	r2, r2, #1
- 525 0068 D2B2     		uxtb	r2, r2
- 337:Src/stm32f3xx_it.c ****       txidx++;
- 526              		.loc 1 337 7 is_stmt 1 view .LVU87
- 527 006a 084D     		ldr	r5, .L43+20
- 528 006c 2D68     		ldr	r5, [r5]
- 529 006e 44F82250 		str	r5, [r4, r2, lsl #2]	@ unaligned
- 338:Src/stm32f3xx_it.c ****     }
- 530              		.loc 1 338 7 view .LVU88
- 338:Src/stm32f3xx_it.c ****     }
- 531              		.loc 1 338 12 is_stmt 0 view .LVU89
- 532 0072 0132     		adds	r2, r2, #1
- 533 0074 0270     		strb	r2, [r0]
- 534 0076 D9E7     		b	.L41
- 535              	.L44:
- 536              		.align	2
- 537              	.L43:
- 538 0078 00000000 		.word	.LANCHOR3
- 539 007c 00000000 		.word	.LANCHOR0
- 540 0080 00000000 		.word	.LANCHOR4
- 541 0084 00000000 		.word	.LANCHOR1
- 542 0088 00000000 		.word	lSample
- 543 008c 00000000 		.word	rSample
- 544 0090 00000000 		.word	TX_Flag
- 545 0094 00000000 		.word	htim3
- 546 0098 00000000 		.word	.LANCHOR2
- 547              		.cfi_endproc
- 548              	.LFE140:
- 550              		.section	.text.TIM4_IRQHandler,"ax",%progbits
- 551              		.align	1
- 552              		.global	TIM4_IRQHandler
- 553              		.syntax unified
- 554              		.thumb
- 555              		.thumb_func
- 556              		.fpu fpv4-sp-d16
- 558              	TIM4_IRQHandler:
- 559              	.LFB141:
+ 338:Src/stm32f3xx_it.c ****   }
+ 517              		.loc 1 338 5 view .LVU83
+ 338:Src/stm32f3xx_it.c ****   }
+ 518              		.loc 1 338 10 is_stmt 0 view .LVU84
+ 519 0064 0133     		adds	r3, r3, #1
+ 520 0066 0B70     		strb	r3, [r1]
+ 521 0068 DDE7     		b	.L40
+ 522              	.L44:
+ 523 006a 00BF     		.align	2
+ 524              	.L43:
+ 525 006c 00000000 		.word	.LANCHOR0
+ 526 0070 00000000 		.word	.LANCHOR3
+ 527 0074 00000000 		.word	.LANCHOR1
+ 528 0078 00000000 		.word	lSample
+ 529 007c 00000000 		.word	rSample
+ 530 0080 00000000 		.word	TX_Flag
+ 531 0084 00000000 		.word	htim3
+ 532 0088 00000000 		.word	.LANCHOR2
+ 533              		.cfi_endproc
+ 534              	.LFE140:
+ 536              		.section	.text.TIM4_IRQHandler,"ax",%progbits
+ 537              		.align	1
+ 538              		.global	TIM4_IRQHandler
+ 539              		.syntax unified
+ 540              		.thumb
+ 541              		.thumb_func
+ 542              		.fpu fpv4-sp-d16
+ 544              	TIM4_IRQHandler:
+ 545              	.LFB141:
  357:Src/stm32f3xx_it.c **** 
  358:Src/stm32f3xx_it.c **** /**
  359:Src/stm32f3xx_it.c ****  * @brief This function handles TIM4 global interrupt.
  360:Src/stm32f3xx_it.c ****  */
  361:Src/stm32f3xx_it.c **** void TIM4_IRQHandler(void)
  362:Src/stm32f3xx_it.c **** {
- 560              		.loc 1 362 1 is_stmt 1 view -0
- 561              		.cfi_startproc
- 562              		@ args = 0, pretend = 0, frame = 0
- 563              		@ frame_needed = 0, uses_anonymous_args = 0
- 564 0000 10B5     		push	{r4, lr}
- 565              	.LCFI7:
- 566              		.cfi_def_cfa_offset 8
- 567              		.cfi_offset 4, -8
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 17
-
-
- 568              		.cfi_offset 14, -4
+ 546              		.loc 1 362 1 is_stmt 1 view -0
+ 547              		.cfi_startproc
+ 548              		@ args = 0, pretend = 0, frame = 0
+ 549              		@ frame_needed = 0, uses_anonymous_args = 0
+ 550 0000 10B5     		push	{r4, lr}
+ 551              	.LCFI7:
+ 552              		.cfi_def_cfa_offset 8
+ 553              		.cfi_offset 4, -8
+ 554              		.cfi_offset 14, -4
  363:Src/stm32f3xx_it.c ****   /* USER CODE BEGIN TIM4_IRQn 0 */
  364:Src/stm32f3xx_it.c ****   JP2_MODE = HAL_GPIO_ReadPin(JP2_GPIO_Port, JP2_Pin);
- 569              		.loc 1 364 3 view .LVU91
- 570              		.loc 1 364 14 is_stmt 0 view .LVU92
- 571 0002 104C     		ldr	r4, .L49
- 572 0004 4FF48061 		mov	r1, #1024
- 573 0008 2046     		mov	r0, r4
- 574 000a FFF7FEFF 		bl	HAL_GPIO_ReadPin
- 575              	.LVL9:
- 576              		.loc 1 364 12 view .LVU93
- 577 000e 0E4B     		ldr	r3, .L49+4
- 578 0010 1870     		strb	r0, [r3]
+ 555              		.loc 1 364 3 view .LVU86
+ 556              		.loc 1 364 14 is_stmt 0 view .LVU87
+ 557 0002 104C     		ldr	r4, .L49
+ 558 0004 4FF48061 		mov	r1, #1024
+ 559 0008 2046     		mov	r0, r4
+ 560 000a FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 561              	.LVL9:
+ 562              		.loc 1 364 12 view .LVU88
+ 563 000e 0E4B     		ldr	r3, .L49+4
+ 564 0010 1870     		strb	r0, [r3]
  365:Src/stm32f3xx_it.c ****   JP1_MODE = HAL_GPIO_ReadPin(JP1_GPIO_Port, JP1_Pin);
- 579              		.loc 1 365 3 is_stmt 1 view .LVU94
- 580              		.loc 1 365 14 is_stmt 0 view .LVU95
- 581 0012 4FF40061 		mov	r1, #2048
- 582 0016 2046     		mov	r0, r4
- 583 0018 FFF7FEFF 		bl	HAL_GPIO_ReadPin
- 584              	.LVL10:
- 585              		.loc 1 365 12 view .LVU96
- 586 001c 0B4B     		ldr	r3, .L49+8
- 587 001e 1870     		strb	r0, [r3]
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 17
+
+
+ 565              		.loc 1 365 3 is_stmt 1 view .LVU89
+ 566              		.loc 1 365 14 is_stmt 0 view .LVU90
+ 567 0012 4FF40061 		mov	r1, #2048
+ 568 0016 2046     		mov	r0, r4
+ 569 0018 FFF7FEFF 		bl	HAL_GPIO_ReadPin
+ 570              	.LVL10:
+ 571              		.loc 1 365 12 view .LVU91
+ 572 001c 0B4B     		ldr	r3, .L49+8
+ 573 001e 1870     		strb	r0, [r3]
  366:Src/stm32f3xx_it.c **** 
  367:Src/stm32f3xx_it.c ****   switch (t4tick)
- 588              		.loc 1 367 3 is_stmt 1 view .LVU97
- 589 0020 0B4B     		ldr	r3, .L49+12
- 590 0022 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 591 0024 092B     		cmp	r3, #9
- 592 0026 06D0     		beq	.L46
+ 574              		.loc 1 367 3 is_stmt 1 view .LVU92
+ 575 0020 0B4B     		ldr	r3, .L49+12
+ 576 0022 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 577 0024 092B     		cmp	r3, #9
+ 578 0026 06D0     		beq	.L46
  368:Src/stm32f3xx_it.c ****   {
  369:Src/stm32f3xx_it.c ****   default:
  370:Src/stm32f3xx_it.c ****     t4tick++;
- 593              		.loc 1 370 5 view .LVU98
- 594              		.loc 1 370 11 is_stmt 0 view .LVU99
- 595 0028 0133     		adds	r3, r3, #1
- 596 002a 094A     		ldr	r2, .L49+12
- 597 002c 1370     		strb	r3, [r2]
+ 579              		.loc 1 370 5 view .LVU93
+ 580              		.loc 1 370 11 is_stmt 0 view .LVU94
+ 581 0028 0133     		adds	r3, r3, #1
+ 582 002a 094A     		ldr	r2, .L49+12
+ 583 002c 1370     		strb	r3, [r2]
  371:Src/stm32f3xx_it.c ****     break;
- 598              		.loc 1 371 5 is_stmt 1 view .LVU100
- 599              	.L47:
+ 584              		.loc 1 371 5 is_stmt 1 view .LVU95
+ 585              	.L47:
  372:Src/stm32f3xx_it.c ****   case 9:
  373:Src/stm32f3xx_it.c ****     BlinkLED(1);
  374:Src/stm32f3xx_it.c ****     t4tick = 0;
@@ -1009,314 +995,313 @@ ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 1
  376:Src/stm32f3xx_it.c ****   }
  377:Src/stm32f3xx_it.c ****   /* USER CODE END TIM4_IRQn 0 */
  378:Src/stm32f3xx_it.c ****   HAL_TIM_IRQHandler(&htim4);
- 600              		.loc 1 378 3 view .LVU101
- 601 002e 0948     		ldr	r0, .L49+16
- 602 0030 FFF7FEFF 		bl	HAL_TIM_IRQHandler
- 603              	.LVL11:
+ 586              		.loc 1 378 3 view .LVU96
+ 587 002e 0948     		ldr	r0, .L49+16
+ 588 0030 FFF7FEFF 		bl	HAL_TIM_IRQHandler
+ 589              	.LVL11:
  379:Src/stm32f3xx_it.c ****   /* USER CODE BEGIN TIM4_IRQn 1 */
  380:Src/stm32f3xx_it.c **** 
  381:Src/stm32f3xx_it.c ****   /* USER CODE END TIM4_IRQn 1 */
  382:Src/stm32f3xx_it.c **** }
- 604              		.loc 1 382 1 is_stmt 0 view .LVU102
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 18
-
-
- 605 0034 10BD     		pop	{r4, pc}
- 606              	.L46:
+ 590              		.loc 1 382 1 is_stmt 0 view .LVU97
+ 591 0034 10BD     		pop	{r4, pc}
+ 592              	.L46:
  373:Src/stm32f3xx_it.c ****     t4tick = 0;
- 607              		.loc 1 373 5 is_stmt 1 view .LVU103
- 608 0036 0120     		movs	r0, #1
- 609 0038 FFF7FEFF 		bl	BlinkLED
- 610              	.LVL12:
+ 593              		.loc 1 373 5 is_stmt 1 view .LVU98
+ 594 0036 0120     		movs	r0, #1
+ 595 0038 FFF7FEFF 		bl	BlinkLED
+ 596              	.LVL12:
  374:Src/stm32f3xx_it.c ****     break;
- 611              		.loc 1 374 5 view .LVU104
+ 597              		.loc 1 374 5 view .LVU99
  374:Src/stm32f3xx_it.c ****     break;
- 612              		.loc 1 374 12 is_stmt 0 view .LVU105
- 613 003c 044B     		ldr	r3, .L49+12
- 614 003e 0022     		movs	r2, #0
- 615 0040 1A70     		strb	r2, [r3]
+ 598              		.loc 1 374 12 is_stmt 0 view .LVU100
+ 599 003c 044B     		ldr	r3, .L49+12
+ 600 003e 0022     		movs	r2, #0
+ 601 0040 1A70     		strb	r2, [r3]
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 18
+
+
  375:Src/stm32f3xx_it.c ****   }
- 616              		.loc 1 375 5 is_stmt 1 view .LVU106
- 617 0042 F4E7     		b	.L47
- 618              	.L50:
- 619              		.align	2
- 620              	.L49:
- 621 0044 00040048 		.word	1207960576
- 622 0048 00000000 		.word	JP2_MODE
- 623 004c 00000000 		.word	JP1_MODE
- 624 0050 00000000 		.word	.LANCHOR5
- 625 0054 00000000 		.word	htim4
- 626              		.cfi_endproc
- 627              	.LFE141:
- 629              		.section	.text.SPI2_IRQHandler,"ax",%progbits
- 630              		.align	1
- 631              		.global	SPI2_IRQHandler
- 632              		.syntax unified
- 633              		.thumb
- 634              		.thumb_func
- 635              		.fpu fpv4-sp-d16
- 637              	SPI2_IRQHandler:
- 638              	.LFB142:
+ 602              		.loc 1 375 5 is_stmt 1 view .LVU101
+ 603 0042 F4E7     		b	.L47
+ 604              	.L50:
+ 605              		.align	2
+ 606              	.L49:
+ 607 0044 00040048 		.word	1207960576
+ 608 0048 00000000 		.word	JP2_MODE
+ 609 004c 00000000 		.word	JP1_MODE
+ 610 0050 00000000 		.word	.LANCHOR4
+ 611 0054 00000000 		.word	htim4
+ 612              		.cfi_endproc
+ 613              	.LFE141:
+ 615              		.section	.text.SPI2_IRQHandler,"ax",%progbits
+ 616              		.align	1
+ 617              		.global	SPI2_IRQHandler
+ 618              		.syntax unified
+ 619              		.thumb
+ 620              		.thumb_func
+ 621              		.fpu fpv4-sp-d16
+ 623              	SPI2_IRQHandler:
+ 624              	.LFB142:
  383:Src/stm32f3xx_it.c **** 
  384:Src/stm32f3xx_it.c **** /**
  385:Src/stm32f3xx_it.c ****  * @brief This function handles SPI2 global interrupt.
  386:Src/stm32f3xx_it.c ****  */
  387:Src/stm32f3xx_it.c **** void SPI2_IRQHandler(void)
  388:Src/stm32f3xx_it.c **** {
- 639              		.loc 1 388 1 view -0
- 640              		.cfi_startproc
- 641              		@ args = 0, pretend = 0, frame = 0
- 642              		@ frame_needed = 0, uses_anonymous_args = 0
- 643 0000 08B5     		push	{r3, lr}
- 644              	.LCFI8:
- 645              		.cfi_def_cfa_offset 8
- 646              		.cfi_offset 3, -8
- 647              		.cfi_offset 14, -4
+ 625              		.loc 1 388 1 view -0
+ 626              		.cfi_startproc
+ 627              		@ args = 0, pretend = 0, frame = 0
+ 628              		@ frame_needed = 0, uses_anonymous_args = 0
+ 629 0000 08B5     		push	{r3, lr}
+ 630              	.LCFI8:
+ 631              		.cfi_def_cfa_offset 8
+ 632              		.cfi_offset 3, -8
+ 633              		.cfi_offset 14, -4
  389:Src/stm32f3xx_it.c ****   /* USER CODE BEGIN SPI2_IRQn 0 */
  390:Src/stm32f3xx_it.c **** 
  391:Src/stm32f3xx_it.c ****   /* USER CODE END SPI2_IRQn 0 */
  392:Src/stm32f3xx_it.c ****   HAL_I2S_IRQHandler(&hi2s2);
- 648              		.loc 1 392 3 view .LVU108
- 649 0002 0248     		ldr	r0, .L53
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 19
-
-
- 650 0004 FFF7FEFF 		bl	HAL_I2S_IRQHandler
- 651              	.LVL13:
+ 634              		.loc 1 392 3 view .LVU103
+ 635 0002 0248     		ldr	r0, .L53
+ 636 0004 FFF7FEFF 		bl	HAL_I2S_IRQHandler
+ 637              	.LVL13:
  393:Src/stm32f3xx_it.c ****   /* USER CODE BEGIN SPI2_IRQn 1 */
  394:Src/stm32f3xx_it.c **** 
  395:Src/stm32f3xx_it.c ****   /* USER CODE END SPI2_IRQn 1 */
  396:Src/stm32f3xx_it.c **** }
- 652              		.loc 1 396 1 is_stmt 0 view .LVU109
- 653 0008 08BD     		pop	{r3, pc}
- 654              	.L54:
- 655 000a 00BF     		.align	2
- 656              	.L53:
- 657 000c 00000000 		.word	hi2s2
- 658              		.cfi_endproc
- 659              	.LFE142:
- 661              		.section	.text.USART2_IRQHandler,"ax",%progbits
- 662              		.align	1
- 663              		.global	USART2_IRQHandler
- 664              		.syntax unified
- 665              		.thumb
- 666              		.thumb_func
- 667              		.fpu fpv4-sp-d16
- 669              	USART2_IRQHandler:
- 670              	.LFB143:
+ 638              		.loc 1 396 1 is_stmt 0 view .LVU104
+ 639 0008 08BD     		pop	{r3, pc}
+ 640              	.L54:
+ 641 000a 00BF     		.align	2
+ 642              	.L53:
+ 643 000c 00000000 		.word	hi2s2
+ 644              		.cfi_endproc
+ 645              	.LFE142:
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 19
+
+
+ 647              		.section	.text.USART2_IRQHandler,"ax",%progbits
+ 648              		.align	1
+ 649              		.global	USART2_IRQHandler
+ 650              		.syntax unified
+ 651              		.thumb
+ 652              		.thumb_func
+ 653              		.fpu fpv4-sp-d16
+ 655              	USART2_IRQHandler:
+ 656              	.LFB143:
  397:Src/stm32f3xx_it.c **** 
  398:Src/stm32f3xx_it.c **** /**
  399:Src/stm32f3xx_it.c ****  * @brief This function handles USART2 global interrupt / USART2 wake-up interrupt through EXTI lin
  400:Src/stm32f3xx_it.c ****  */
  401:Src/stm32f3xx_it.c **** void USART2_IRQHandler(void)
  402:Src/stm32f3xx_it.c **** {
- 671              		.loc 1 402 1 is_stmt 1 view -0
- 672              		.cfi_startproc
- 673              		@ args = 0, pretend = 0, frame = 0
- 674              		@ frame_needed = 0, uses_anonymous_args = 0
- 675 0000 08B5     		push	{r3, lr}
- 676              	.LCFI9:
- 677              		.cfi_def_cfa_offset 8
- 678              		.cfi_offset 3, -8
- 679              		.cfi_offset 14, -4
+ 657              		.loc 1 402 1 is_stmt 1 view -0
+ 658              		.cfi_startproc
+ 659              		@ args = 0, pretend = 0, frame = 0
+ 660              		@ frame_needed = 0, uses_anonymous_args = 0
+ 661 0000 08B5     		push	{r3, lr}
+ 662              	.LCFI9:
+ 663              		.cfi_def_cfa_offset 8
+ 664              		.cfi_offset 3, -8
+ 665              		.cfi_offset 14, -4
  403:Src/stm32f3xx_it.c ****   /* USER CODE BEGIN USART2_IRQn 0 */
  404:Src/stm32f3xx_it.c **** 
  405:Src/stm32f3xx_it.c ****   /* USER CODE END USART2_IRQn 0 */
  406:Src/stm32f3xx_it.c ****   HAL_UART_IRQHandler(&huart2);
- 680              		.loc 1 406 3 view .LVU111
- 681 0002 0248     		ldr	r0, .L57
- 682 0004 FFF7FEFF 		bl	HAL_UART_IRQHandler
- 683              	.LVL14:
+ 666              		.loc 1 406 3 view .LVU106
+ 667 0002 0248     		ldr	r0, .L57
+ 668 0004 FFF7FEFF 		bl	HAL_UART_IRQHandler
+ 669              	.LVL14:
  407:Src/stm32f3xx_it.c ****   /* USER CODE BEGIN USART2_IRQn 1 */
  408:Src/stm32f3xx_it.c **** 
  409:Src/stm32f3xx_it.c ****   /* USER CODE END USART2_IRQn 1 */
  410:Src/stm32f3xx_it.c **** }
- 684              		.loc 1 410 1 is_stmt 0 view .LVU112
- 685 0008 08BD     		pop	{r3, pc}
- 686              	.L58:
- 687 000a 00BF     		.align	2
- 688              	.L57:
- 689 000c 00000000 		.word	huart2
- 690              		.cfi_endproc
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 20
+ 670              		.loc 1 410 1 is_stmt 0 view .LVU107
+ 671 0008 08BD     		pop	{r3, pc}
+ 672              	.L58:
+ 673 000a 00BF     		.align	2
+ 674              	.L57:
+ 675 000c 00000000 		.word	huart2
+ 676              		.cfi_endproc
+ 677              	.LFE143:
+ 679              		.global	cdctick
+ 680              		.global	up
+ 681              		.global	val
+ 682              		.global	t2cnt
+ 683              		.global	txidx
+ 684              		.global	t4tick
+ 685              		.global	skip
+ 686              		.global	signalR
+ 687              		.global	SignalL
+ 688              		.global	SignalAvg
+ 689              		.global	NextBuf
+ 690              		.global	BBuf
+ 691              		.global	ABuf
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 20
 
 
- 691              	.LFE143:
- 693              		.global	cdctick
- 694              		.global	up
- 695              		.global	val
- 696              		.global	t2cnt
- 697              		.global	txidx
- 698              		.global	t4tick
- 699              		.global	skip
- 700              		.global	signalR
- 701              		.global	SignalL
- 702              		.global	SignalAvg
- 703              		.global	NextBuf
- 704              		.global	BBuf
- 705              		.global	ABuf
- 706              		.section	.bss.ABuf,"aw",%nobits
- 707              		.align	2
- 708              		.set	.LANCHOR1,. + 0
- 711              	ABuf:
- 712 0000 00000000 		.space	64
- 712      00000000 
- 712      00000000 
- 712      00000000 
- 712      00000000 
- 713              		.section	.bss.BBuf,"aw",%nobits
- 714              		.align	2
- 715              		.set	.LANCHOR2,. + 0
- 718              	BBuf:
- 719 0000 00000000 		.space	64
- 719      00000000 
- 719      00000000 
- 719      00000000 
- 719      00000000 
- 720              		.section	.bss.NextBuf,"aw",%nobits
- 721              		.set	.LANCHOR0,. + 0
- 724              	NextBuf:
- 725 0000 00       		.space	1
- 726              		.section	.bss.SignalAvg,"aw",%nobits
- 727              		.align	2
- 730              	SignalAvg:
- 731 0000 00000000 		.space	4
- 732              		.section	.bss.SignalL,"aw",%nobits
- 733              		.align	2
- 736              	SignalL:
- 737 0000 00000000 		.space	4
- 738              		.section	.bss.cdctick,"aw",%nobits
- 739              		.align	1
- 742              	cdctick:
- 743 0000 0000     		.space	2
- 744              		.section	.bss.signalR,"aw",%nobits
- 745              		.align	2
- 748              	signalR:
- 749 0000 00000000 		.space	4
- 750              		.section	.bss.skip,"aw",%nobits
- 751              		.set	.LANCHOR3,. + 0
- 754              	skip:
- 755 0000 00       		.space	1
- 756              		.section	.bss.t2cnt,"aw",%nobits
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 21
+ 692              		.section	.bss.ABuf,"aw",%nobits
+ 693              		.align	2
+ 694              		.set	.LANCHOR1,. + 0
+ 697              	ABuf:
+ 698 0000 00000000 		.space	64
+ 698      00000000 
+ 698      00000000 
+ 698      00000000 
+ 698      00000000 
+ 699              		.section	.bss.BBuf,"aw",%nobits
+ 700              		.align	2
+ 701              		.set	.LANCHOR2,. + 0
+ 704              	BBuf:
+ 705 0000 00000000 		.space	64
+ 705      00000000 
+ 705      00000000 
+ 705      00000000 
+ 705      00000000 
+ 706              		.section	.bss.NextBuf,"aw",%nobits
+ 707              		.set	.LANCHOR0,. + 0
+ 710              	NextBuf:
+ 711 0000 00       		.space	1
+ 712              		.section	.bss.SignalAvg,"aw",%nobits
+ 713              		.align	2
+ 716              	SignalAvg:
+ 717 0000 00000000 		.space	4
+ 718              		.section	.bss.SignalL,"aw",%nobits
+ 719              		.align	2
+ 722              	SignalL:
+ 723 0000 00000000 		.space	4
+ 724              		.section	.bss.cdctick,"aw",%nobits
+ 725              		.align	1
+ 728              	cdctick:
+ 729 0000 0000     		.space	2
+ 730              		.section	.bss.signalR,"aw",%nobits
+ 731              		.align	2
+ 734              	signalR:
+ 735 0000 00000000 		.space	4
+ 736              		.section	.bss.skip,"aw",%nobits
+ 739              	skip:
+ 740 0000 00       		.space	1
+ 741              		.section	.bss.t2cnt,"aw",%nobits
+ 744              	t2cnt:
+ 745 0000 00       		.space	1
+ 746              		.section	.bss.t4tick,"aw",%nobits
+ 747              		.set	.LANCHOR4,. + 0
+ 750              	t4tick:
+ 751 0000 00       		.space	1
+ 752              		.section	.bss.txidx,"aw",%nobits
+ 753              		.set	.LANCHOR3,. + 0
+ 756              	txidx:
+ 757 0000 00       		.space	1
+ 758              		.section	.bss.up,"aw",%nobits
+ 761              	up:
+ 762 0000 00       		.space	1
+ 763              		.section	.bss.val,"aw",%nobits
+ 764              		.align	1
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 21
 
 
- 759              	t2cnt:
- 760 0000 00       		.space	1
- 761              		.section	.bss.t4tick,"aw",%nobits
- 762              		.set	.LANCHOR5,. + 0
- 765              	t4tick:
- 766 0000 00       		.space	1
- 767              		.section	.bss.txidx,"aw",%nobits
- 768              		.set	.LANCHOR4,. + 0
- 771              	txidx:
- 772 0000 00       		.space	1
- 773              		.section	.bss.up,"aw",%nobits
- 776              	up:
- 777 0000 00       		.space	1
- 778              		.section	.bss.val,"aw",%nobits
- 779              		.align	1
- 782              	val:
- 783 0000 0000     		.space	2
- 784              		.text
- 785              	.Letext0:
- 786              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
- 787              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
- 788              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 789              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 790              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h"
- 791              		.file 7 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
- 792              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
- 793              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\lib\\gcc\\arm-none-eabi
- 794              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include
- 795              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 796              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
- 797              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h"
- 798              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h"
- 799              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h"
- 800              		.file 16 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
- 801              		.file 17 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
- 802              		.file 18 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
- 803              		.file 19 "Inc/led.h"
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 22
+ 767              	val:
+ 768 0000 0000     		.space	2
+ 769              		.text
+ 770              	.Letext0:
+ 771              		.file 2 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 772              		.file 3 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 773              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
+ 774              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
+ 775              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303xc.h"
+ 776              		.file 7 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 777              		.file 8 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include\
+ 778              		.file 9 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\lib\\gcc\\arm-none-eabi
+ 779              		.file 10 "c:\\program files (x86)\\gnu tools arm embedded\\9 2019-q4-major\\arm-none-eabi\\include
+ 780              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 781              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 782              		.file 13 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2s.h"
+ 783              		.file 14 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pcd.h"
+ 784              		.file 15 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h"
+ 785              		.file 16 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
+ 786              		.file 17 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
+ 787              		.file 18 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h"
+ 788              		.file 19 "Inc/led.h"
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 22
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f3xx_it.c
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:18     .text.NMI_Handler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:26     .text.NMI_Handler:00000000 NMI_Handler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:40     .text.HardFault_Handler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:47     .text.HardFault_Handler:00000000 HardFault_Handler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:64     .text.MemManage_Handler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:71     .text.MemManage_Handler:00000000 MemManage_Handler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:88     .text.BusFault_Handler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:95     .text.BusFault_Handler:00000000 BusFault_Handler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:112    .text.UsageFault_Handler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:119    .text.UsageFault_Handler:00000000 UsageFault_Handler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:136    .text.SVC_Handler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:143    .text.SVC_Handler:00000000 SVC_Handler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:156    .text.DebugMon_Handler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:163    .text.DebugMon_Handler:00000000 DebugMon_Handler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:176    .text.PendSV_Handler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:183    .text.PendSV_Handler:00000000 PendSV_Handler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:196    .text.SysTick_Handler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:203    .text.SysTick_Handler:00000000 SysTick_Handler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:223    .text.DMA1_Channel4_IRQHandler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:230    .text.DMA1_Channel4_IRQHandler:00000000 DMA1_Channel4_IRQHandler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:250    .text.DMA1_Channel4_IRQHandler:0000000c $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:255    .text.DMA1_Channel5_IRQHandler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:262    .text.DMA1_Channel5_IRQHandler:00000000 DMA1_Channel5_IRQHandler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:282    .text.DMA1_Channel5_IRQHandler:0000000c $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:287    .text.USB_HP_CAN_TX_IRQHandler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:294    .text.USB_HP_CAN_TX_IRQHandler:00000000 USB_HP_CAN_TX_IRQHandler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:314    .text.USB_HP_CAN_TX_IRQHandler:0000000c $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:319    .text.USB_LP_CAN_RX0_IRQHandler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:326    .text.USB_LP_CAN_RX0_IRQHandler:00000000 USB_LP_CAN_RX0_IRQHandler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:346    .text.USB_LP_CAN_RX0_IRQHandler:0000000c $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:351    .text.TIM2_IRQHandler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:358    .text.TIM2_IRQHandler:00000000 TIM2_IRQHandler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:412    .text.TIM2_IRQHandler:00000030 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:422    .text.TIM3_IRQHandler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:429    .text.TIM3_IRQHandler:00000000 TIM3_IRQHandler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:538    .text.TIM3_IRQHandler:00000078 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:551    .text.TIM4_IRQHandler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:558    .text.TIM4_IRQHandler:00000000 TIM4_IRQHandler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:621    .text.TIM4_IRQHandler:00000044 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:630    .text.SPI2_IRQHandler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:637    .text.SPI2_IRQHandler:00000000 SPI2_IRQHandler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:657    .text.SPI2_IRQHandler:0000000c $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:662    .text.USART2_IRQHandler:00000000 $t
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:669    .text.USART2_IRQHandler:00000000 USART2_IRQHandler
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:689    .text.USART2_IRQHandler:0000000c $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:742    .bss.cdctick:00000000 cdctick
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:776    .bss.up:00000000 up
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:782    .bss.val:00000000 val
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:759    .bss.t2cnt:00000000 t2cnt
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:771    .bss.txidx:00000000 txidx
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:765    .bss.t4tick:00000000 t4tick
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:754    .bss.skip:00000000 skip
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:748    .bss.signalR:00000000 signalR
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:736    .bss.SignalL:00000000 SignalL
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:730    .bss.SignalAvg:00000000 SignalAvg
-ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s 			page 23
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:18     .text.NMI_Handler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:26     .text.NMI_Handler:00000000 NMI_Handler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:40     .text.HardFault_Handler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:47     .text.HardFault_Handler:00000000 HardFault_Handler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:64     .text.MemManage_Handler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:71     .text.MemManage_Handler:00000000 MemManage_Handler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:88     .text.BusFault_Handler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:95     .text.BusFault_Handler:00000000 BusFault_Handler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:112    .text.UsageFault_Handler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:119    .text.UsageFault_Handler:00000000 UsageFault_Handler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:136    .text.SVC_Handler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:143    .text.SVC_Handler:00000000 SVC_Handler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:156    .text.DebugMon_Handler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:163    .text.DebugMon_Handler:00000000 DebugMon_Handler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:176    .text.PendSV_Handler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:183    .text.PendSV_Handler:00000000 PendSV_Handler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:196    .text.SysTick_Handler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:203    .text.SysTick_Handler:00000000 SysTick_Handler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:223    .text.DMA1_Channel4_IRQHandler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:230    .text.DMA1_Channel4_IRQHandler:00000000 DMA1_Channel4_IRQHandler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:250    .text.DMA1_Channel4_IRQHandler:0000000c $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:255    .text.DMA1_Channel5_IRQHandler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:262    .text.DMA1_Channel5_IRQHandler:00000000 DMA1_Channel5_IRQHandler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:282    .text.DMA1_Channel5_IRQHandler:0000000c $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:287    .text.USB_HP_CAN_TX_IRQHandler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:294    .text.USB_HP_CAN_TX_IRQHandler:00000000 USB_HP_CAN_TX_IRQHandler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:314    .text.USB_HP_CAN_TX_IRQHandler:0000000c $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:319    .text.USB_LP_CAN_RX0_IRQHandler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:326    .text.USB_LP_CAN_RX0_IRQHandler:00000000 USB_LP_CAN_RX0_IRQHandler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:346    .text.USB_LP_CAN_RX0_IRQHandler:0000000c $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:351    .text.TIM2_IRQHandler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:358    .text.TIM2_IRQHandler:00000000 TIM2_IRQHandler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:412    .text.TIM2_IRQHandler:00000030 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:422    .text.TIM3_IRQHandler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:429    .text.TIM3_IRQHandler:00000000 TIM3_IRQHandler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:525    .text.TIM3_IRQHandler:0000006c $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:537    .text.TIM4_IRQHandler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:544    .text.TIM4_IRQHandler:00000000 TIM4_IRQHandler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:607    .text.TIM4_IRQHandler:00000044 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:616    .text.SPI2_IRQHandler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:623    .text.SPI2_IRQHandler:00000000 SPI2_IRQHandler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:643    .text.SPI2_IRQHandler:0000000c $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:648    .text.USART2_IRQHandler:00000000 $t
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:655    .text.USART2_IRQHandler:00000000 USART2_IRQHandler
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:675    .text.USART2_IRQHandler:0000000c $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:728    .bss.cdctick:00000000 cdctick
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:761    .bss.up:00000000 up
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:767    .bss.val:00000000 val
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:744    .bss.t2cnt:00000000 t2cnt
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:756    .bss.txidx:00000000 txidx
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:750    .bss.t4tick:00000000 t4tick
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:739    .bss.skip:00000000 skip
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:734    .bss.signalR:00000000 signalR
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:722    .bss.SignalL:00000000 SignalL
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:716    .bss.SignalAvg:00000000 SignalAvg
+ARM GAS  C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s 			page 23
 
 
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:724    .bss.NextBuf:00000000 NextBuf
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:718    .bss.BBuf:00000000 BBuf
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:711    .bss.ABuf:00000000 ABuf
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:707    .bss.ABuf:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:714    .bss.BBuf:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:725    .bss.NextBuf:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:727    .bss.SignalAvg:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:733    .bss.SignalL:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:739    .bss.cdctick:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:745    .bss.signalR:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:755    .bss.skip:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:760    .bss.t2cnt:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:766    .bss.t4tick:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:772    .bss.txidx:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:777    .bss.up:00000000 $d
-C:\Users\SHINRA~1\AppData\Local\Temp\cce40SKa.s:779    .bss.val:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:710    .bss.NextBuf:00000000 NextBuf
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:704    .bss.BBuf:00000000 BBuf
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:697    .bss.ABuf:00000000 ABuf
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:693    .bss.ABuf:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:700    .bss.BBuf:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:711    .bss.NextBuf:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:713    .bss.SignalAvg:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:719    .bss.SignalL:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:725    .bss.cdctick:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:731    .bss.signalR:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:740    .bss.skip:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:745    .bss.t2cnt:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:751    .bss.t4tick:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:757    .bss.txidx:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:762    .bss.up:00000000 $d
+C:\Users\SHINRA~1\AppData\Local\Temp\ccG8W2Gd.s:764    .bss.val:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_IncTick
